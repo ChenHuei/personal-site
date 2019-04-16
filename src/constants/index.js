@@ -46,3 +46,68 @@ export const RESUME_INFORMATION = [
     ]
   }
 ]
+
+export const SKILL_INFORMATION = [
+  {
+    name: 'Vue.js',
+    logo: require('../assets/logo.png'),
+    list: [
+      {
+        name: 'Life Cycle',
+        description: '區分在建立 Vue 實例時，各 Hook 的功用'
+      },
+      {
+        name: 'Components',
+        description: '適時切分避免重複、Props 傳遞參數並加入檢查、Emit 相關事件資料'
+      },
+      {
+        name: 'Vue Router',
+        description: '靜態或動態分配路由、傳遞參數、區分 History 和 Hash Mode'
+      },
+      {
+        name: 'VueX',
+        description: '區分 commit 修改 state 和 action 通常負責非同步處理'
+      },
+      {
+        name: '相關 UI 套件',
+        description: 'Element UI'
+      }
+    ]
+  },
+  {
+    name: 'Tools',
+    logo: require('../assets/tools.svg'),
+    list: [
+      {
+        name: 'SASS / SCSS',
+        description: '適時使用變數和 mixin'
+      },
+      {
+        name: 'Pug',
+        description: '正確使用縮排代替繁瑣的 Html Tag '
+      }
+    ]
+  },
+  {
+    name: 'Other',
+    logo: require('../assets/skill.svg'),
+    list: [
+      {
+        name: 'RESTful API',
+        description: '使用 Fetch 或 Axios 正確接收和傳遞 API'
+      },
+      {
+        name: 'Async',
+        description: '了解非同步使用時機並能用 Promise 處理 '
+      },
+      {
+        name: 'Git',
+        description: '正確版本控制專案'
+      },
+      {
+        name: 'RWD',
+        description: '在不同裝置時提供適合的使用者體驗'
+      }
+    ]
+  }
+]

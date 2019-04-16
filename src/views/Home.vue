@@ -3,17 +3,19 @@
     <Header/>
     <About/>
     <Resume/>
+    <Skill/>
   </div>
 </template>
 
 <script>
-import { Header, About, Resume } from '@/components'
+import { Header, About, Resume, Skill } from '@/components'
 export default {
   name: 'Home',
   components: {
     Header,
     About,
-    Resume
+    Resume,
+    Skill
   }
 }
 </script>
@@ -21,7 +23,6 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/import';
 .home {
-  overflow-x: hidden;
   > section {
     padding: 80px 10%;
     &:nth-of-type(2n) {
