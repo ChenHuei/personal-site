@@ -1,22 +1,31 @@
 <template>
   <div class="home">
-    <h1>{{msg}}</h1>
+    <Header/>
+    <About/>
+    <Resume/>
   </div>
 </template>
 
 <script>
+import { Header, About, Resume } from '@/components'
 export default {
   name: 'Home',
-  data () {
-    return {
-      msg: 'Home'
-    }
+  components: {
+    Header,
+    About,
+    Resume
   }
 }
 </script>
 
 <style lang="scss" scoped>
-// .home {
-
-// }
+@import '../styles/import';
+.home {
+  > section {
+    padding: 80px 10%;
+    &:nth-of-type(2n) {
+      background-color: color(grey_dark);
+    }
+  }
+}
 </style>

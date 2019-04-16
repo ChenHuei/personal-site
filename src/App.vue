@@ -9,7 +9,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import './styles/import';
 #app {
   @include size(100vw, 100vh);
