@@ -21,6 +21,7 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/import';
 .home {
+  overflow-x: hidden;
   > section {
     padding: 80px 10%;
     &:nth-of-type(2n) {

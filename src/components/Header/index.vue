@@ -53,6 +53,7 @@ export default {
         font-weight: 500;
         opacity: .6;
         transition: .5s;
+        list-style: none;
         cursor: pointer;
         &:last-child {
           padding: 16px 0 16px 16px;
