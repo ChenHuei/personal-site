@@ -2,20 +2,22 @@
   <div class="home">
     <Header/>
     <About/>
-    <Resume/>
     <Skill/>
+    <Resume/>
+    <Works/>
   </div>
 </template>
 
 <script>
-import { Header, About, Resume, Skill } from '@/components'
+import { Header, About, Resume, Skill, Works } from '@/components'
 export default {
   name: 'Home',
   components: {
     Header,
     About,
     Resume,
-    Skill
+    Skill,
+    Works
   }
 }
 </script>
