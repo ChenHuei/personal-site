@@ -137,15 +137,23 @@ export const WORKS_INFORMATION = [
 
 export const FOOTER_ITEMS = [
   {
-    url: 'https://www.facebook.com/aaa830714'
+    url: 'https://www.facebook.com/aaa830714',
+    isBrand: true,
+    tag: 'facebook'
   },
   {
-    url: 'https://line.me/ti/p/UGvZHai6ji'
+    url: 'https://line.me/ti/p/UGvZHai6ji',
+    isBrand: true,
+    tag: 'line'
   },
   {
-    url: 'mailto:aaa830714@gmail.com'
+    url: 'mailto:aaa830714@gmail.com',
+    isBrand: false,
+    tag: 'envelope'
   },
   {
-    url: 'https://github.com/ChenHuei'
+    url: 'https://github.com/ChenHuei',
+    isBrand: true,
+    tag: 'github'
   }
 ]
