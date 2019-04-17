@@ -134,3 +134,18 @@ export const WORKS_INFORMATION = [
     ]
   }
 ]
+
+export const FOOTER_ITEMS = [
+  {
+    url: 'https://www.facebook.com/aaa830714'
+  },
+  {
+    url: 'https://line.me/ti/p/UGvZHai6ji'
+  },
+  {
+    url: 'mailto:aaa830714@gmail.com'
+  },
+  {
+    url: 'https://github.com/ChenHuei'
+  }
+]

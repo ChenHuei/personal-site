@@ -12,13 +12,16 @@
         <div class="right">
           <div class="name">{{work.name}}</div>
           <div class="description">{{work.description}}</div>
-          <ul class="skill">
-            <li
-              v-for="skill in work.skills"
-              :key="skill">
-              {{skill}}
-            </li>
-          </ul>
+          <div class="skill">
+            <h4>相關技術：</h4>
+            <ul>
+              <li
+                v-for="skill in work.skills"
+                :key="skill">
+                {{skill}}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -80,11 +83,17 @@ export default {
           color: color(grey);
         }
         > .skill {
-          margin: 0;
-          padding: 0;
-          > li {
-            list-style: none;
-            margin-bottom: 8px;
+          > h4 {
+            margin: 0 0 8px;
+            font-weight: 400;
+          }
+          > ul {
+            margin: 0;
+            padding: 0;
+            > li {
+              list-style: none;
+              margin-bottom: 8px;
+            }
           }
         }
       }

@@ -5,11 +5,12 @@
     <!-- <Skill/> -->
     <Resume/>
     <Works/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import { Header, About, Resume, Works } from '@/components'
+import { Header, About, Resume, Works, Footer } from '@/components'
 export default {
   name: 'Home',
   components: {
@@ -17,7 +18,8 @@ export default {
     About,
     Resume,
     // Skill,
-    Works
+    Works,
+    Footer
   }
 }
 </script>
