@@ -25,34 +25,28 @@ export const ABOUT_INFORMATION = [
 
 export const RESUME_INFORMATION = [
   {
-    title: 'Education',
+    company: '私立淡江大學',
+    jobs: '資管系',
+    year: '2012/09 ~ 2016/06',
     list: [
-      {
-        en: 'Information Of Management',
-        zn: '私立淡江大學',
-        yearStart: 2012,
-        yearEnd: 2016,
-        description: '應用大學四年所學的 C#、Java 和 OOP，實作 APP「治腎先師」協助台北榮總醫院腎臟科的病人，改良以往紙本紀錄全面電子化，並在校內評選優等以及參與校外比賽的資格。'
-      }
+      '系學會會長',
+      '國際志工'
     ]
   },
   {
-    title: 'Experience',
+    company: 'IOH',
+    jobs: '活動企劃',
+    year: '2017/06 ~ 2018/04',
     list: [
-      {
-        en: 'Extracurricular Activities',
-        zn: '資管系學會、國際志工',
-        yearStart: 2012,
-        yearEnd: 2016,
-        description: '除了在過程中培養許多團隊合作、表達能力、負責任和高抗壓等的軟實力之外，更於擔任會長及國際志工的過程中，開拓眼界並逐漸堆疊出自己的價值觀。'
-      },
-      {
-        en: 'Innovation Open House',
-        zn: '活動企劃專員',
-        yearStart: 2017,
-        yearEnd: 2018,
-        description: '負責統整公司的線下活動，包括規劃公司內部的活動流程、訪談老師和學生、與學校討論教學合作以及超過 20 場至全台灣高中職學校上台分享的經驗等。'
-      }
+      '全台校園演講'
+    ]
+  },
+  {
+    company: '英特拉金融科技',
+    jobs: '前端工程師',
+    year: '2018/07 ~ Now',
+    list: [
+      '使用 Vue.js'
     ]
   }
 ]
@@ -117,7 +111,7 @@ export const WORKS_INFORMATION = [
   {
     name: '點餐系統',
     description: 'iPad',
-    logo: require('../assets/works/01.png'),
+    logo: require('../assets/works/02.png'),
     skills: [
       'Vue.js', 'VueX', 'SCSS', 'Vuetify'
     ]
@@ -125,7 +119,7 @@ export const WORKS_INFORMATION = [
   {
     name: 'Theater',
     description: 'Theater',
-    logo: require('../assets/works/01.png'),
+    logo: require('../assets/works/03.gif'),
     skills: [
       'Vue.js', 'SCSS'
     ]
@@ -133,25 +127,25 @@ export const WORKS_INFORMATION = [
   {
     name: 'Game',
     description: 'Game',
-    logo: require('../assets/works/01.png'),
+    logo: require('../assets/works/04.gif'),
     skills: [
       'Javascript'
     ]
   },
   {
-    name: '手機',
-    description: '手機',
-    logo: require('../assets/works/01.png'),
+    name: '天氣盒子',
+    description: '天氣盒子',
+    logo: require('../assets/works/05.gif'),
     skills: [
-      'JQuery'
+      'Pug', 'SASS', 'Javascript'
     ]
   },
   {
-    name: '天氣盒子',
-    description: '天氣盒子',
-    logo: require('../assets/works/01.png'),
+    name: '手機',
+    description: '手機',
+    logo: require('../assets/works/06.gif'),
     skills: [
-      'Pug', 'SASS', 'Javascript'
+      'JQuery'
     ]
   }
 ]

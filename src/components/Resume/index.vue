@@ -3,21 +3,20 @@
     <Title :text="'RESUME'"/>
     <div class="container">
       <div
-        v-for="(type, index) in RESUME_INFORMATION"
-        :key="type.title"
-        :class="typeClassHandler(index)">
-        <div
-          class="item"
-          v-for="item in type.list"
-          :key="item.en">
-          <div class="year">
-            {{item.yearStart}}
-            <span>-</span>
-            {{item.yearEnd}}
+        class="step"
+        v-for="step in RESUME_INFORMATION"
+        :key="step.company">
+        <div class="position">
+          <div class="title">
+            {{step.company}} / {{step.jobs}} ({{step.year}})
           </div>
-          <div class="en">{{item.en}}</div>
-          <div class="zn">{{item.zn}}</div>
-          <div class="description">{{item.description}}</div>
+          <ul class="items">
+            <li
+              class="item"
+              v-for="item in step.list"
+              :key="item">
+              {{item}}</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -36,15 +35,6 @@ export default {
   },
   components: {
     Title
-  },
-  methods: {
-    typeClassHandler (index) {
-      return {
-        type: true,
-        education: index === 0,
-        experience: index === 1
-      }
-    }
   }
 }
 </script>
@@ -53,64 +43,78 @@ export default {
 @import '../../styles/import';
 .resume {
   > .container {
-    @include flexCenter;
-    flex-direction: column;
     margin-top: 64px;
-    > .type {
-      position: relative;
-      display: flex;
-      align-items: flex-start;
+    > .step {
+      @include flexCenter;
       justify-content: flex-start;
-      margin: 40px 0 20px 0;
-      padding-bottom: 20px;
-      &:first-child {
-        border-bottom: 1px solid color(black);
-      }
-      &.education {
-        &::before {
-          content: 'Eduction：';
-        }
-      }
-      &.experience {
-        &::before {
-          content: 'Experience：'
-        }
-      }
-      &.education, &.experience {
-        &::before {
-          position: absolute;
-          left: 12px;
-          top: -40px;
+      > .position {
+        @include flexCenter;
+        @include size(calc(50% - 1px), auto);
+        flex-direction: column;
+        align-items: flex-end;
+        border-right: 2px solid color(grey);
+        box-sizing: content-box;
+        > .title {
+          position: relative;
+          @include size(100%, auto);
+          padding: 0 28px;
           font-size: 20px;
-          color: color(black_light);
-        }
-      }
-      > .item {
-        @include size(50%, auto);
-        padding: 0 12px;
-        font-size: 14px;
-        color: color(black);
-        > .year {
-          @include size(120px, 28px);
-          @include flexCenter;
-          padding: 4px 20px;
-          margin-bottom: 16px;
-          color: color(white);
-          background: color(black_dark);
-          > span {
-            margin: 0 4px;
+          line-height: 32px;
+          letter-spacing: .4px;
+          text-align: right;
+          &::after {
+            content: '';
+            position: absolute;
+            right: -11px;
+            top: 5px;
+            @include size(20px);
+            background-color: color(grey);
+            border-radius: 50%;
           }
         }
-        > .en {
-          font-size: 16px;
+        > .items {
+          @include size(100%, auto);
+          margin: 0;
+          padding: 20px;
+          text-align: right;
+          > li {
+            list-style: none;
+            margin-bottom: 8px;
+            &:last-child {
+              margin: 0;
+            }
+          }
         }
-        > .zn {
-          margin: 8px 0 12px 0;
-          font-weight: 700;
+      }
+      &:nth-child(2n + 1) {
+        justify-content: flex-end;
+        > .position {
+          align-items: flex-start;
+          border-right: none;
+          border-left: 2px solid color(grey);
+          > .title {
+            text-align: left;
+            &::after {
+              left: -11px;
+            }
+          }
+          > .items {
+            text-align: left;
+          }
         }
-        > .description {
-          text-align: justify;
-          line-height: 24px;
+      }
+      &:first-child {
+        > .position {
+          > .title {
+            &::before {
+              content: '';
+              position: absolute;
+              left: -2.5px;
+              top: 0;
+              @include size(5px);
+              background-color: color(grey_dark);
+            }
+          }
         }
       }
     }

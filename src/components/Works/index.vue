@@ -61,8 +61,11 @@ export default {
     > .work {
       @include size(100%, 200px);
       @include flexCenter;
-      margin-bottom: 20px;
+      margin-bottom: 40px;;
       cursor: pointer;
+      &:last-child {
+        margin-bottom: 0;
+      }
       &:hover {
         opacity: .8;
       }
