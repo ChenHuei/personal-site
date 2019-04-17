@@ -13,6 +13,16 @@ export const HEADER_ITEMS = [
   }
 ]
 
+export const ABOUT_INFORMATION = [
+  {
+    name: '陳振輝',
+    jobs: '前端工程師 (Front-End)',
+    description: '目前擔任 香港商英特拉金融科技 前端工程師 (2018/07/09 - Now)。這段時間除了使用 JQuery 維護公司舊有網站並開發新功能之外，更多的時候在使用 Vue.js 配合 Vuex、Scss 等工具，串接 RESTful API 開發新的專案(如：漢堡王、佛光山 ...)。以下將更詳細地說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
+    phone: '0986-776-379',
+    email: 'aaa830714@gmail.com'
+  }
+]
+
 export const RESUME_INFORMATION = [
   {
     title: 'Education',
@@ -44,6 +54,17 @@ export const RESUME_INFORMATION = [
         description: '負責統整公司的線下活動，包括規劃公司內部的活動流程、訪談老師和學生、與學校討論教學合作以及超過 20 場至全台灣高中職學校上台分享的經驗等。'
       }
     ]
+  }
+]
+
+export const LINKS_ITEMS = [
+  {
+    name: 'Codepen',
+    link: 'https://codepen.io/zhenhuei/'
+  },
+  {
+    name: 'GitHub',
+    link: 'https://github.com/ChenHuei'
   }
 ]
 

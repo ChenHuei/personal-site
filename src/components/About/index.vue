@@ -6,15 +6,34 @@
         <div class="cover"></div>
       </div>
       <div class="right">
-        <div class="introduce">
-          Hello！我是振輝，今年 25 歲！前年從淡江大學資管系畢業後，因興趣和理念相近先至 IOH 擔任活動企劃專員將近一年，
-          負責統整公司的線下活動。並於工作過程中發現自己對網頁設計持有一些興趣，時常利用下班後或假日的時間自學網頁相關資訊，
-          包括 HTML、CSS、Javascript、PHP 和 Ruby on Rails 等。
-          以下將更詳細說明我過往的學經歷，非常感謝您抽空觀看我的個人網站，請多多指教，謝謝！
+        <div
+          class="introduce"
+          v-for="item in ABOUT_INFORMATION"
+          :key="item.name">
+          <div class="name">{{item.name}}</div>
+          <div class="jobs">{{item.jobs}}</div>
+          <div class="description">{{item.description}}</div>
+          <div class="phone">
+            <font-awesome-icon icon="mobile-alt" />
+            {{item.phone}}</div>
+          <a
+            class="email"
+            href="mailto:aaa830714@gmail.com"
+            target="_blank">
+            <font-awesome-icon icon="envelope" />
+            {{item.email}}
+          </a>
         </div>
-        <div class="buttons">
-          <Button text="Download CV"/>
-          <Button text="Hire Me"/>
+        <div class="links">
+          <a
+            v-for="item in LINKS_ITEMS"
+            :key="item.link"
+            :href="item.link"
+            target="_blank">
+            <div class="button">
+              {{item.name}}
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -22,13 +41,18 @@
 </template>
 
 <script>
-import Title from '../Title'
-import Button from '../Button'
+import { Title } from '../../components'
+import { LINKS_ITEMS, ABOUT_INFORMATION } from '../../constants'
 export default {
   name: 'About',
   components: {
-    Title,
-    Button
+    Title
+  },
+  data () {
+    return {
+      LINKS_ITEMS,
+      ABOUT_INFORMATION
+    }
   }
 }
 </script>
@@ -52,16 +76,59 @@ export default {
       flex: 3;
       margin-left: 24px;
       > .introduce {
-        color: color(grey);
         font-size: 14px;
         line-height: 24px;
-        text-align: justify;
-        letter-spacing: .2px;
+        > .name {
+          font-size: 24px;
+          font-weight: 700;
+        }
+        > .jobs {
+          margin: 8px 0;
+          color: color(black_light);
+          letter-spacing: 1px;
+        }
+        > .description {
+          color: color(grey);
+          text-align: justify;
+          letter-spacing: .2px;
+        }
+        > .phone {
+          margin: 16px 0 4px;
+          > svg {
+            margin: 0 3px;
+          }
+        }
+        > .email {
+          color: color(black_light);
+          text-decoration: none;
+        }
       }
-      > .buttons {
+      > .links {
         @include flexCenter;
         justify-content: flex-start;
-        margin-top: 24px;
+        margin-top: 8px;
+        > a {
+          padding: 4px 8px;
+          color: color(black);
+          text-decoration: none;
+          &:first-child {
+            padding: 4px 0;
+          }
+          > .button {
+            @include size(auto);
+            @include flexCenter;
+            padding: 12px 24px;
+            margin-right: 24px;
+            border-radius: 8px;
+            border: 1px solid color(black);
+            transition: .5s;
+            cursor: pointer;
+            &:hover {
+              color: color(white);
+              background-color: color(black);
+            }
+          }
+        }
       }
     }
   }
