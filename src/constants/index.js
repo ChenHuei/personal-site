@@ -83,3 +83,54 @@ export const SKILL_INFORMATION = [
     ]
   }
 ]
+
+export const WORKS_INFORMATION = [
+  {
+    name: '支付頁面',
+    description: '串接各個支付，提供買方',
+    logo: require('../assets/works/01.png'),
+    skills: [
+      'JQuery'
+    ]
+  },
+  {
+    name: '點餐系統',
+    description: 'iPad',
+    logo: require('../assets/works/01.png'),
+    skills: [
+      'Vue.js', 'VueX', 'SCSS', 'Vuetify'
+    ]
+  },
+  {
+    name: 'Theater',
+    description: 'Theater',
+    logo: require('../assets/works/01.png'),
+    skills: [
+      'Vue.js', 'SCSS'
+    ]
+  },
+  {
+    name: 'Game',
+    description: 'Game',
+    logo: require('../assets/works/01.png'),
+    skills: [
+      'Javascript'
+    ]
+  },
+  {
+    name: '手機',
+    description: '手機',
+    logo: require('../assets/works/01.png'),
+    skills: [
+      'JQuery'
+    ]
+  },
+  {
+    name: '天氣盒子',
+    description: '天氣盒子',
+    logo: require('../assets/works/01.png'),
+    skills: [
+      'Pug', 'SASS', 'Javascript'
+    ]
+  }
+]
