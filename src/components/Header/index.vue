@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <nav class="header">
     <div class="left">
       <div class="logo"></div>
     </div>
@@ -30,7 +30,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>
@@ -40,6 +40,7 @@ export default {
   data () {
     return {
       isOpen: false,
+      isFirstToPass: false,
       location: {},
       nowLocation: 0,
       endLocation: 0,
@@ -57,11 +58,12 @@ export default {
   methods: {
     onScroll () {
       this.nowLocation = window.scrollY
+      if (this.isFirstToPass) return false
       const items = ['about', 'resume', 'works']
       items.forEach(item => {
-        this.$set(this.location, item, document.querySelector(`#${item}`).offsetTop)
+        this.$set(this.location, item, document.querySelector(`#${item}`).offsetTop - 40)
       })
-      console.log(this.location)
+      this.isFirstToPass = true
     },
     openContainerHandler () {
       this.isOpen = true
