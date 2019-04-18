@@ -77,6 +77,9 @@ export default {
       @include size(100%, 240px);
       @include flexCenter;
       margin-bottom: 40px;
+      &:nth-child(2) {
+        margin: 10px 0;
+      }
       &:last-child {
         margin-bottom: 0;
       }
@@ -92,7 +95,7 @@ export default {
       }
       > .right {
         @include size(40%, 100%);
-        padding: 0 16px;
+        padding: 0 24px;
         font-size: 14px;
         > a {
           font-size: 16px;
@@ -122,6 +125,7 @@ export default {
             @include size(50%, 32px);
             @include flexCenter;
             padding: 8px 16px;
+            margin-top: 16px;
             border: 1px solid color(black);
             border-radius: 8px;
             transition: .5s;

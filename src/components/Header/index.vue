@@ -40,7 +40,6 @@ export default {
   data () {
     return {
       isOpen: false,
-      isFirstToPass: false,
       location: {},
       nowLocation: 0,
       endLocation: 0,
@@ -58,12 +57,6 @@ export default {
   methods: {
     onScroll () {
       this.nowLocation = window.scrollY
-      if (this.isFirstToPass) return false
-      const items = ['about', 'resume', 'works']
-      items.forEach(item => {
-        this.$set(this.location, item, document.querySelector(`#${item}`).offsetTop - 40)
-      })
-      this.isFirstToPass = true
     },
     openContainerHandler () {
       this.isOpen = true
@@ -90,6 +83,10 @@ export default {
   },
   mounted () {
     window.addEventListener('scroll', this.onScroll)
+    const items = ['about', 'resume', 'works']
+    items.forEach(item => {
+      this.$set(this.location, item, document.querySelector(`#${item}`).offsetTop - 40)
+    })
   },
   beforeDestroy () {
     window.removeEventListener('scroll', this.onScroll)
@@ -150,8 +147,8 @@ export default {
     @include size(100vw, 100vh);
     @include fixed;
     @include flexCenter;
-    left: 400vw;
-    transition: 1s;
+    left: 200vw;
+    transition: .6s;
     > .left {
       @include size(35%, 100%);
       background-color: color(black);
@@ -163,6 +160,7 @@ export default {
       padding: 5%;
       background-color: color(white);
       > h4 {
+        line-height: 24px;
         text-align: center;
       }
       > ul {
