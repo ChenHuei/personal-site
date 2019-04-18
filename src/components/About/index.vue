@@ -65,15 +65,16 @@ export default {
     justify-content: space-between;
     margin-top: 64px;
     > .left {
-      flex: 2;
+      @include size(40%, 300px);
       @include flexCenter;
       > .cover {
-        @include size(300px);
+        @include size(100%);
         @include backgroundImage('../../assets/cover.jpg');
+        transition: 1s;
       }
     }
     > .right {
-      flex: 3;
+      @include size(60%, auto);
       > .introduce {
         font-size: 14px;
         line-height: 24px;
@@ -128,6 +129,29 @@ export default {
             }
           }
         }
+      }
+    }
+  }
+}
+@media screen and (min-width: 660px) and (max-width: 800px) {
+  .about {
+    > .container {
+      > .left {
+        > .cover {
+          height: 240px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 659px) {
+  .about {
+    > .container {
+      flex-direction: column;
+      margin-top: 64px;
+      > .right {
+        @include size(100%, auto);
+        margin-top: 40px;
       }
     }
   }
