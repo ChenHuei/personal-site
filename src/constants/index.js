@@ -32,8 +32,12 @@ export const RESUME_INFORMATION = [
     jobs: '資管系',
     year: '2012/09 ~ 2016/06',
     list: [
-      '系學會會長',
-      '國際志工'
+      {
+        title: '系學會會長'
+      },
+      {
+        title: '國際志工'
+      }
     ]
   },
   {
@@ -41,7 +45,9 @@ export const RESUME_INFORMATION = [
     jobs: '活動企劃',
     year: '2017/06 ~ 2018/04',
     list: [
-      '全台校園演講'
+      {
+        title: '全台校園演講'
+      }
     ]
   },
   {
@@ -49,7 +55,22 @@ export const RESUME_INFORMATION = [
     jobs: '前端工程師',
     year: '2018/07 ~ Now',
     list: [
-      '使用框架 Vue.js'
+      {
+        title: '佛光山購物車、串接支付',
+        description: 'Vue.js、Cookies'
+      },
+      {
+        title: '特店平台增加報表功能',
+        description: 'JQuery'
+      },
+      {
+        title: '漢堡王點餐系統',
+        description: 'Vue.js、Vuex、SCSS'
+      },
+      {
+        title: '發票管理平台',
+        description: 'Vue.js'
+      }
     ]
   }
 ]

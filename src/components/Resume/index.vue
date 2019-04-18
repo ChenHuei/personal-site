@@ -14,8 +14,14 @@
             <li
               class="item"
               v-for="item in step.list"
-              :key="item">
-              {{item}}</li>
+              :key="item.title">
+              <div class="main">{{item.title}}</div>
+              <div
+                v-if="item.description"
+                class="description">
+                {{item.description}}
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -80,6 +86,17 @@ export default {
           > li {
             list-style: none;
             margin-bottom: 8px;
+            line-height: 24px;
+            > .description {
+              font-size: 12px;
+              color: color(grey);
+              &::before {
+                content: '('
+              }
+              &::after {
+                content: ')'
+              }
+            }
             &:last-child {
               margin: 0;
             }

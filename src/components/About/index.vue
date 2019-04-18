@@ -74,7 +74,6 @@ export default {
     }
     > .right {
       flex: 3;
-      margin-left: 24px;
       > .introduce {
         font-size: 14px;
         line-height: 24px;
