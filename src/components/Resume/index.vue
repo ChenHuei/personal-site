@@ -65,6 +65,7 @@ export default {
           @include size(100%, auto);
           padding: 0 28px;
           font-size: 20px;
+          font-weight: 500;
           line-height: 32px;
           letter-spacing: .4px;
           text-align: right;
@@ -84,9 +85,10 @@ export default {
           padding: 20px;
           text-align: right;
           > li {
-            list-style: none;
             margin-bottom: 8px;
+            font-size: 16px;
             line-height: 24px;
+            list-style: none;
             > .description {
               font-size: 12px;
               color: color(grey);
@@ -130,6 +132,36 @@ export default {
               top: 0;
               @include size(5px);
               background-color: color(grey_dark);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 659px) {
+  .resume {
+    > .container {
+      > .step {
+        > .position {
+          @include size(100%, auto);
+          border-left: 2px solid color(grey);
+          border-right: none;
+          > .title {
+            font-size: 16px;
+            text-align: left;
+            &::after {
+              left: -11px;
+            }
+          }
+          > .items {
+            padding: 20px 28px 28px;
+            text-align: left;
+            > li {
+              font-size: 14px;
+              > .description {
+                font-size: 12px;
+              }
             }
           }
         }
