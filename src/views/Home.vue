@@ -27,6 +27,7 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/import';
 .home {
+  @include size(100%, auto);
   margin-top: 64px;
   > section {
     padding: 80px 10%;

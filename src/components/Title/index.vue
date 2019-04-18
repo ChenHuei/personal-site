@@ -32,7 +32,7 @@ export default {
 @media screen and (max-width: 659px) {
   .title {
     > h4 {
-      font-size: 24px;
+      font-size: 32px;
     }
   }
 }

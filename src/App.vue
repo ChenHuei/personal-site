@@ -15,6 +15,5 @@ export default {
   @include size(100vw, 100vh);
   font-family: $font-family;
   color: color(black);
-  overflow-x: hidden;
 }
 </style>

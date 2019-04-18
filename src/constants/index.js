@@ -1,18 +1,15 @@
 export const HEADER_ITEMS = [
   {
     id: 0,
-    label: 'About',
-    value: '#about'
+    label: 'About'
   },
   {
     id: 1,
-    label: 'Resume',
-    value: '#resume'
+    label: 'Resume'
   },
   {
     id: 2,
-    label: 'Works',
-    value: '#works'
+    label: 'Works'
   }
 ]
 
