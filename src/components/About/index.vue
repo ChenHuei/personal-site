@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section class="about" id="about">
     <Title :text="'ABOUT ME'"/>
     <div class="container">
       <div class="left">

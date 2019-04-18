@@ -1,5 +1,5 @@
 <template>
-  <section class="works">
+  <section class="works" id="works">
     <Title :text="'LATEST WORKS'"/>
     <div class="container">
       <div

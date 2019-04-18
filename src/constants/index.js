@@ -1,15 +1,18 @@
 export const HEADER_ITEMS = [
   {
     id: 0,
-    label: 'About'
+    label: 'About',
+    value: '#about'
   },
   {
     id: 1,
-    label: 'Resume'
+    label: 'Resume',
+    value: '#resume'
   },
   {
     id: 2,
-    label: 'Works'
+    label: 'Works',
+    value: '#works'
   }
 ]
 
@@ -101,24 +104,24 @@ export const SKILL_INFORMATION = [
 
 export const WORKS_INFORMATION = [
   {
-    name: '支付頁面',
-    description: '串接各個支付，提供買方',
+    name: 'Scan2Pay',
+    description: '串接各種線上支付提供店家(買方) ＊建議用手機模式預覽',
     logo: require('../assets/works/01.png'),
     skills: [
-      'JQuery'
+      'JQuery', 'CSS', 'HTML'
     ]
   },
   {
-    name: '點餐系統',
-    description: 'iPad',
+    name: '漢堡王',
+    description: '開發漢堡王點餐系統(iPad)',
     logo: require('../assets/works/02.png'),
     skills: [
-      'Vue.js', 'VueX', 'SCSS', 'Vuetify'
+      'Vue.js', 'Vuex', 'SCSS', 'Vuetify'
     ]
   },
   {
-    name: 'Theater',
-    description: 'Theater',
+    name: 'Vue.js Theater',
+    description: '購物車',
     logo: require('../assets/works/03.gif'),
     skills: [
       'Vue.js', 'SCSS'
@@ -126,7 +129,7 @@ export const WORKS_INFORMATION = [
   },
   {
     name: 'Game',
-    description: 'Game',
+    description: '遊戲',
     logo: require('../assets/works/04.gif'),
     skills: [
       'Javascript'
@@ -134,18 +137,10 @@ export const WORKS_INFORMATION = [
   },
   {
     name: '天氣盒子',
-    description: '天氣盒子',
+    description: 'CSS',
     logo: require('../assets/works/05.gif'),
     skills: [
       'Pug', 'SASS', 'Javascript'
-    ]
-  },
-  {
-    name: '手機',
-    description: '手機',
-    logo: require('../assets/works/06.gif'),
-    skills: [
-      'JQuery'
     ]
   }
 ]

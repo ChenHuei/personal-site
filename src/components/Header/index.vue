@@ -8,7 +8,9 @@
         <li
           v-for="item in HEADER_ITEMS"
           :key="item.id">
-          {{item.label}}
+          <a :href="item.value">
+            {{item.label}}
+          </a>
         </li>
       </ul>
     </div>
@@ -32,9 +34,11 @@ export default {
 .header {
   @include size(100vw, 64px);
   @include flexCenter;
+  @include fixed;
   justify-content: space-between;
   padding: 16px 10%;
   background-color: color(grey_light);
+  z-index: 10;
   > .left {
     > .logo {
       @include size(32px);
@@ -49,7 +53,6 @@ export default {
       padding: 0;
       > li {
         padding: 16px 24px;
-        color: color(white);
         font-weight: 500;
         opacity: .6;
         transition: .5s;
@@ -60,6 +63,10 @@ export default {
         }
         &:hover {
           opacity: 1;
+        }
+        > a {
+          color: color(white);
+          text-decoration: none;
         }
       }
     }

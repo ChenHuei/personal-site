@@ -1,5 +1,5 @@
 <template>
-  <section class="resume">
+  <section class="resume" id="resume">
     <Title :text="'RESUME'"/>
     <div class="container">
       <div

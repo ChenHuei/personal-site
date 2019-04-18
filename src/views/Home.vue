@@ -27,6 +27,7 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/import';
 .home {
+  margin-top: 64px;
   > section {
     padding: 80px 10%;
     &:nth-of-type(2n) {
