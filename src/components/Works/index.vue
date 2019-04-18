@@ -102,7 +102,7 @@ export default {
         }
         > .description {
           margin: 8px 0 16px;
-        line-height: 24px;
+          line-height: 24px;
           color: color(grey);
         }
         > .skill {
@@ -119,7 +119,7 @@ export default {
             }
           }
           > .button {
-            @include size(80px, 32px);
+            @include size(50%, 32px);
             @include flexCenter;
             padding: 8px 16px;
             border: 1px solid color(black);
@@ -141,5 +141,47 @@ export default {
       }
     }
   }
+}
+@media screen and (max-width: 659px) {
+  .works {
+    > .container {
+      > .work {
+        @include size(100%, 400px);
+        flex-direction: column;
+        > a {
+          @include size(100%, 50%);
+        }
+        > .right {
+          @include flexCenter;
+          @include size(100%, auto);
+          flex-direction: column;
+          margin-top: 20px;
+          > .skill {
+            > h4 {
+              text-align: center;
+            }
+            > ul {
+              @include flexCenter;
+              > li {
+                margin: 0 8px 0 0;
+                &::after {
+                  content: ',';
+                }
+                &:last-child {
+                  &::after {
+                    content: '';
+                  }
+                }
+              }
+            }
+            > .button {
+              @include size(100%, 32px);
+              margin-top: 12px;
+            }
+          }
+        }
+      }
+    }
+}
 }
 </style>
