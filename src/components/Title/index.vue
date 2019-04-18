@@ -28,4 +28,12 @@ export default {
     letter-spacing: 2px;
   }
 }
+
+@media screen and (max-width: 659px) {
+  .title {
+    > h4 {
+      font-size: 24px;
+    }
+  }
+}
 </style>

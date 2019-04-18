@@ -137,9 +137,7 @@ export default {
   .about {
     > .container {
       > .left {
-        > .cover {
-          height: 240px;
-        }
+        height: 240px;
       }
     }
   }
@@ -149,9 +147,12 @@ export default {
     > .container {
       flex-direction: column;
       margin-top: 64px;
+      > .left {
+        width: 280px;
+      }
       > .right {
         @include size(100%, auto);
-        margin-top: 40px;
+        margin-top: 60px;
       }
     }
   }
