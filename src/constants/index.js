@@ -17,7 +17,7 @@ export const ABOUT_INFORMATION = [
   {
     name: '陳振輝',
     jobs: '前端工程師 (Front-End)',
-    description: '目前擔任 香港商英特拉金融科技 前端工程師 (2018/07/09 - Now)。這段時間除了使用 JQuery 維護公司舊有網站並開發新功能之外，更多心力投入在使用 Vue.js 配合 Vuex、Scss 等工具，串接 RESTful API 開發新的專案(如：漢堡王、佛光山 ...)。以下將更詳細地說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
+    description: '目前擔任 香港商英特拉金融科技 前端工程師 (2018/07/09 - Now)。這段時間除了使用 JQuery 維護公司舊有網站並開發新功能之外，更多心力投入在使用 Vue.js 配合 Vuex、Scss 等工具，串接 RESTful API 開發新的專案(如：漢堡王、佛光山 ...)。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
     phone: '0986-776-379',
     email: 'aaa830714@gmail.com'
   }
@@ -30,11 +30,11 @@ export const RESUME_INFORMATION = [
     year: '2018/07 ~ Now',
     list: [
       {
-        title: '佛光山購物車、串接支付',
+        title: '佛光山購物車',
         description: 'Vue.js、Cookies'
       },
       {
-        title: '特店平台增加報表功能',
+        title: '特店平台新增報表功能',
         description: 'JQuery'
       },
       {
@@ -123,7 +123,7 @@ export const SKILL_INFORMATION = [
 export const WORKS_INFORMATION = [
   {
     name: 'Scan2Pay',
-    description: '串接各種線上支付提供店家(買方)',
+    description: '串接線上支付方式',
     logo: require('../assets/works/01.png'),
     view: 'https://dev.intella.co/intella#forward',
     skills: [
@@ -132,7 +132,7 @@ export const WORKS_INFORMATION = [
   },
   {
     name: '漢堡王',
-    description: '串接支付的平板(iPad)點餐系統',
+    description: '平板(iPad)點餐系統',
     logo: require('../assets/works/02.png'),
     view: 'https://dev.intella.co/order-system/#/',
     skills: [
@@ -141,7 +141,7 @@ export const WORKS_INFORMATION = [
   },
   {
     name: 'Vue.js Theater',
-    description: '以滾輪的方式移動畫面，並製作收入購物車時的動畫',
+    description: '以滾動的方式移動畫面、製作收入購物車的動畫',
     logo: require('../assets/works/03.gif'),
     code: 'https://codepen.io/zhenhuei/pen/aQBOqK',
     view: 'https://s.codepen.io/zhenhuei/debug/aQBOqK/NQMzYqmLJJjk',
@@ -151,7 +151,7 @@ export const WORKS_INFORMATION = [
   },
   {
     name: 'Game',
-    description: '以 Prototype 為基礎開發',
+    description: '以 Prototype 為基礎進行開發',
     logo: require('../assets/works/04.gif'),
     code: 'https://codepen.io/zhenhuei/pen/ZqgaQq',
     view: 'https://s.codepen.io/zhenhuei/debug/ZqgaQq/LDAmdPzjGjbr',
@@ -161,7 +161,7 @@ export const WORKS_INFORMATION = [
   },
   {
     name: '天氣盒子',
-    description: '以純 SCSS 的方式模擬點擊，加入動畫並嘗試製作 svg ',
+    description: '製作動畫、SVG',
     logo: require('../assets/works/05.gif'),
     code: 'https://codepen.io/zhenhuei/pen/qMMgQX',
     view: 'https://s.codepen.io/zhenhuei/debug/qMMgQX/PNkvYGVazXvA',

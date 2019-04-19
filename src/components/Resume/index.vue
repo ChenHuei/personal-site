@@ -82,7 +82,7 @@ export default {
         > .items {
           @include size(100%, auto);
           margin: 0;
-          padding: 20px;
+          padding: 28px;
           text-align: right;
           > li {
             margin-bottom: 8px;
