@@ -25,29 +25,6 @@ export const ABOUT_INFORMATION = [
 
 export const RESUME_INFORMATION = [
   {
-    company: '私立淡江大學',
-    jobs: '資管系',
-    year: '2012/09 ~ 2016/06',
-    list: [
-      {
-        title: '系學會會長'
-      },
-      {
-        title: '國際志工'
-      }
-    ]
-  },
-  {
-    company: 'IOH',
-    jobs: '活動企劃',
-    year: '2017/06 ~ 2018/04',
-    list: [
-      {
-        title: '全台校園演講'
-      }
-    ]
-  },
-  {
     company: '英特拉金融科技',
     jobs: '前端工程師',
     year: '2018/07 ~ Now',
@@ -67,6 +44,29 @@ export const RESUME_INFORMATION = [
       {
         title: '發票管理平台',
         description: 'Vue.js'
+      }
+    ]
+  },
+  {
+    company: 'IOH',
+    jobs: '活動企劃',
+    year: '2017/06 ~ 2018/04',
+    list: [
+      {
+        title: '全台校園演講'
+      }
+    ]
+  },
+  {
+    company: '私立淡江大學',
+    jobs: '資管系',
+    year: '2012/09 ~ 2016/06',
+    list: [
+      {
+        title: '系學會會長'
+      },
+      {
+        title: '國際志工'
       }
     ]
   }

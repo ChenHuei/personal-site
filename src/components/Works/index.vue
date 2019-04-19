@@ -32,7 +32,9 @@
             <div
               v-if="work.code"
               class="button">
-              <a :href="work.code">
+              <a
+                :href="work.code"
+                target="_blank">
                 原始碼
               </a>
             </div>
