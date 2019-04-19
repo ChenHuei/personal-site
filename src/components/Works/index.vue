@@ -80,7 +80,7 @@ export default {
       @include flexCenter;
       margin-bottom: 40px;
       &:nth-child(2) {
-        margin: 10px 0;
+        margin: 30px 0 10px 0;
       }
       &:last-child {
         margin-bottom: 0;
@@ -109,6 +109,7 @@ export default {
           margin: 8px 0 16px;
           line-height: 24px;
           color: color(grey);
+          text-align: center;
         }
         > .skill {
           > h4 {
@@ -154,6 +155,9 @@ export default {
       > .work {
         @include size(100%, 400px);
         flex-direction: column;
+        &:nth-child(2) {
+          margin: 0 0 40px 0;
+        }
         > a {
           @include size(100%, 50%);
         }
