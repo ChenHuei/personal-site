@@ -109,7 +109,6 @@ export default {
           margin: 8px 0 16px;
           line-height: 24px;
           color: color(grey);
-          text-align: center;
         }
         > .skill {
           > h4 {
@@ -166,6 +165,9 @@ export default {
           @include size(100%, auto);
           flex-direction: column;
           margin-top: 20px;
+          > .description {
+            text-align: center;
+          }
           > .skill {
             > h4 {
               text-align: center;
