@@ -22,7 +22,14 @@
         class="left"
         @click="closeContainerHandler"></div>
       <div class="right">
-        <h4>Zhen Huei Personal Website</h4>
+        <div class="title">
+          <h4>Zhen Huei</h4>
+          <div
+            class="cancel"
+            @click="closeContainerHandler">
+            X
+          </div>
+        </div>
         <ul>
           <li
             v-for="item in HEADER_ITEMS"
@@ -151,7 +158,7 @@ export default {
     @include fixed;
     @include flexCenter;
     left: 200vw;
-    transition: .6s;
+    transition: .5s;
     > .left {
       @include size(35%, 100%);
       background-color: color(black);
@@ -162,9 +169,30 @@ export default {
       @include size(65%, 100%);
       padding: 5%;
       background-color: color(white);
-      > h4 {
-        line-height: 24px;
-        text-align: center;
+      > .title {
+        position: relative;
+        @include flexCenter;
+        margin: 12px;
+        > h4 {
+          margin: 0;
+          line-height: 24px;
+          text-align: center;
+        }
+        > .cancel {
+          position: absolute;
+          right: -8px;
+          top: 50%;
+          padding: 4px 8px;
+          border-radius: 50%;
+          transform: translateY(-50%);
+          transition: .5s;
+          cursor: pointer;
+          &:hover {
+            font-weight: 700;
+            color: color(white);
+            background-color: color(red);
+          }
+        }
       }
       > ul {
         @include flexCenter;
