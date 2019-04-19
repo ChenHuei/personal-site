@@ -1,7 +1,10 @@
 <template>
   <nav class="header">
     <div class="left">
-      <div class="logo"></div>
+      <div
+        class="logo"
+        @click="navigateHandler('about')">
+      </div>
     </div>
     <div class="right">
       <ul>
@@ -106,7 +109,7 @@ export default {
   z-index: 10;
   > .left {
     > .logo {
-      @include size(32px);
+      @include size(64px);
       @include backgroundImage('../../assets/logo.png');
       cursor: pointer;
     }
