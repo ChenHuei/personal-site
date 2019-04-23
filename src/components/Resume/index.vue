@@ -15,11 +15,25 @@
               class="item"
               v-for="item in step.list"
               :key="item.title">
-              <div class="main">{{item.title}}</div>
-              <div
-                v-if="item.description"
-                class="description">
+              <div class="main">
+                <template v-if="item.link">
+                  <a
+                    :href="item.link"
+                    target="_blank">
+                    {{item.title}}
+                  </a>
+                </template>
+                <template v-else>
+                  {{item.title}}
+                </template>
+              </div>
+              <div class="description">
                 {{item.description}}
+              </div>
+              <div
+                v-if="item.skill"
+                class="skill">
+                {{item.skill}}
               </div>
             </li>
           </ul>
@@ -89,9 +103,31 @@ export default {
             font-size: 16px;
             line-height: 24px;
             list-style: none;
-            > .description {
+            > .main {
+              position: relative;
+              @include flexCenter;
+              justify-content: flex-end;
+              > a {
+                position: relative;
+                right: -8px;
+                color: color(black);
+                text-decoration: none;
+                transition: .5s;
+                padding: 0 8px;
+                &:hover {
+                  color: color(white);
+                  background-color: color(black);
+                }
+              }
+              > .skill {
+                margin-left: 4px;
+              }
+            }
+            > .description, > .skill {
               font-size: 12px;
               color: color(grey);
+            }
+            .skill {
               &::before {
                 content: '('
               }
@@ -119,6 +155,11 @@ export default {
           }
           > .items {
             text-align: left;
+            > li {
+              > .main {
+                justify-content: flex-start;
+              }
+            }
           }
         }
       }
@@ -159,6 +200,12 @@ export default {
             text-align: left;
             > li {
               font-size: 14px;
+              > .main {
+                justify-content: flex-start;
+                > a {
+                  left: -8px;
+                }
+              }
               > .description {
                 font-size: 12px;
               }

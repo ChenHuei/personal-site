@@ -17,7 +17,7 @@ export const ABOUT_INFORMATION = [
   {
     name: '陳振輝',
     jobs: '前端工程師 (Front-End)',
-    description: '目前擔任 香港商英特拉金融科技 前端工程師 (2018/07/09 - Now)。這段時間除了使用 JQuery 維護公司舊有網站並開發新功能之外，更多心力投入在使用 Vue.js 配合 Vuex、Scss 等工具，串接 RESTful API 開發新的專案(如：漢堡王、佛光山 ...)。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
+    description: '目前擔任 英特拉金融科技 前端工程師 (2018/07/09 - Now)。這段時間除了使用 JQuery 維護公司既有網站並開發新功能之外，也在新的專案中導入 Vue.js、Vuex、Scss 等工具，並和後端討論、串接 RESTful API 開發新的專案(如：漢堡王、佛光山 ...)。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
     phone: '0986-776-379',
     email: 'aaa830714@gmail.com'
   }
@@ -31,19 +31,23 @@ export const RESUME_INFORMATION = [
     list: [
       {
         title: '佛光山購物車',
-        description: 'Vue.js、Cookies'
+        description: '根據設計稿製作頁面，並透過 cookie 將購物資訊帶到公司既有的支付平台進行交易',
+        skill: 'Vue.js、Cookies'
       },
       {
         title: '特店平台新增報表功能',
-        description: 'JQuery'
+        description: '沿用專案既有技術 JQuery 串接 API 新增下載 Excel 的功能',
+        skill: 'JQuery'
       },
       {
         title: '漢堡王點餐系統',
-        description: 'Vue.js、Vuex、SCSS'
+        description: '與業務及設計師討論使用者故事、規劃流程，並透過 API 串接線上和線下交易(悠遊卡)',
+        skill: 'Vue.js、Vuex、SCSS'
       },
       {
         title: '發票管理平台',
-        description: 'Vue.js'
+        description: '與行政人員討論需求、規劃流程並串接 API 開發發票相關作業的線上平台',
+        skill: 'Vue.js'
       }
     ]
   },
@@ -53,7 +57,13 @@ export const RESUME_INFORMATION = [
     year: '2017/06 ~ 2018/04',
     list: [
       {
-        title: '全台校園演講'
+        title: '校系影音分享',
+        description: '分享大學所學和課外活動的經驗及反思',
+        link: 'https://ioh.tw/talks/%E6%B7%A1%E6%B1%9F%E8%B3%87%E7%AE%A1%E7%B3%BB-%E9%99%B3%E6%8C%AF%E8%BC%9D-zhen-huei-chen-tw-study-tku-bde'
+      },
+      {
+        title: '全台校園演講',
+        description: '曾至全台 19 所不同的高中職分享大學經歷'
       }
     ]
   },
@@ -63,10 +73,12 @@ export const RESUME_INFORMATION = [
     year: '2012/09 ~ 2016/06',
     list: [
       {
-        title: '系學會會長'
+        title: '系學會會長',
+        description: '與 13 名幹部和近 30 名的學弟妹，一同討論及舉辦約 20 場的系內外活動'
       },
       {
-        title: '國際志工'
+        title: '國際志工',
+        description: '於大學的寒暑假，遠赴至柬埔寨和泰國進行電腦和中文的教學計畫'
       }
     ]
   }
@@ -166,7 +178,7 @@ export const WORKS_INFORMATION = [
     code: 'https://codepen.io/zhenhuei/pen/qMMgQX',
     view: 'https://s.codepen.io/zhenhuei/debug/qMMgQX/PNkvYGVazXvA',
     skills: [
-      'SCSS', 'Pug', 'SVG'
+      'SCSS', 'PUG', 'SVG'
     ]
   }
 ]
