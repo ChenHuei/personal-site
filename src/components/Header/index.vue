@@ -67,6 +67,7 @@ export default {
   methods: {
     onScroll () {
       this.nowLocation = window.scrollY
+      this.setPosition()
     },
     openContainerHandler () {
       this.isOpen = true
@@ -89,14 +90,17 @@ export default {
         window.scroll(0, this.nowLocation)
         window.requestAnimationFrame(this.animation)
       }
+    },
+    setPosition () {
+      const items = ['about', 'resume', 'works']
+      items.forEach(item => {
+        this.$set(this.location, item, document.querySelector(`#${item}`).offsetTop - 40)
+      })
     }
   },
   mounted () {
     window.addEventListener('scroll', this.onScroll)
-    const items = ['about', 'resume', 'works']
-    items.forEach(item => {
-      this.$set(this.location, item, document.querySelector(`#${item}`).offsetTop - 40)
-    })
+    this.setPosition()
   },
   beforeDestroy () {
     window.removeEventListener('scroll', this.onScroll)
@@ -157,7 +161,7 @@ export default {
     @include size(100vw, 100vh);
     @include fixed;
     @include flexCenter;
-    left: 200vw;
+    left: 150vw;
     transition: .5s;
     > .left {
       @include size(35%, 100%);
