@@ -162,9 +162,18 @@ export const WORKS_INFORMATION = [
     ]
   },
   {
+    name: 'Facebook Login',
+    description: '串接 Facebook 登入 API 並取得登入者名稱及大頭貼',
+    logo: require('../assets/works/04.gif'),
+    view: 'https://s.codepen.io/zhenhuei/debug/gEgpJP/vWMRwaqaVBLr',
+    skills: [
+      'Vue.js', 'API', 'SCSS'
+    ]
+  },
+  {
     name: 'Game',
     description: '以 Prototype 為基礎進行開發',
-    logo: require('../assets/works/04.gif'),
+    logo: require('../assets/works/05.gif'),
     code: 'https://codepen.io/zhenhuei/pen/ZqgaQq',
     view: 'https://s.codepen.io/zhenhuei/debug/ZqgaQq/LDAmdPzjGjbr',
     skills: [
@@ -174,7 +183,7 @@ export const WORKS_INFORMATION = [
   {
     name: '天氣盒子',
     description: '製作動畫、SVG',
-    logo: require('../assets/works/05.gif'),
+    logo: require('../assets/works/06.gif'),
     code: 'https://codepen.io/zhenhuei/pen/qMMgQX',
     view: 'https://s.codepen.io/zhenhuei/debug/qMMgQX/PNkvYGVazXvA',
     skills: [
