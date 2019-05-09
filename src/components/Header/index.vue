@@ -78,7 +78,7 @@ export default {
     navigateHandler (label) {
       const link = label.toLowerCase()
       this.endLocation = this.location[link]
-      this.animation(this.endLocation)
+      this.animation()
     },
     animation () {
       const diff = Math.floor((this.endLocation - this.nowLocation) * 0.1)

@@ -87,7 +87,7 @@ export const RESUME_INFORMATION = [
 export const LINKS_ITEMS = [
   {
     name: 'Codepen',
-    link: 'https://codepen.io/zhenhuei/'
+    link: 'https://codepen.io/chenhuei/'
   },
   {
     name: 'GitHub',
@@ -155,8 +155,8 @@ export const WORKS_INFORMATION = [
     name: 'Vue.js Theater',
     description: '以滾動的方式移動畫面、製作收入購物車的動畫',
     logo: require('../assets/works/03.gif'),
-    code: 'https://codepen.io/zhenhuei/pen/aQBOqK',
-    view: 'https://s.codepen.io/zhenhuei/debug/aQBOqK/NQMzYqmLJJjk',
+    code: 'https://codepen.io/chenhuei/pen/OYyKPY',
+    view: 'https://s.codepen.io/chenhuei/debug/OYyKPY/bYAdyewXwNok',
     skills: [
       'Vue.js', 'SCSS'
     ]
@@ -165,7 +165,7 @@ export const WORKS_INFORMATION = [
     name: 'Facebook Login',
     description: '串接 Facebook 登入 API 並取得登入者名稱及大頭貼',
     logo: require('../assets/works/04.gif'),
-    view: 'https://s.codepen.io/zhenhuei/debug/gEgpJP/vWMRwaqaVBLr',
+    view: 'https://s.codepen.io/chenhuei/debug/dEYxZQ/LDAmdPaEaWOr',
     skills: [
       'Vue.js', 'API', 'SCSS'
     ]
@@ -174,8 +174,8 @@ export const WORKS_INFORMATION = [
     name: 'Game',
     description: '以 Prototype 為基礎進行開發',
     logo: require('../assets/works/05.gif'),
-    code: 'https://codepen.io/zhenhuei/pen/ZqgaQq',
-    view: 'https://s.codepen.io/zhenhuei/debug/ZqgaQq/LDAmdPzjGjbr',
+    code: 'https://codepen.io/chenhuei/pen/eapJVV',
+    view: 'https://s.codepen.io/chenhuei/debug/eapJVV/yoMZEWVOVKmk',
     skills: [
       'Javascript'
     ]
@@ -184,8 +184,8 @@ export const WORKS_INFORMATION = [
     name: '天氣盒子',
     description: '製作動畫、SVG',
     logo: require('../assets/works/06.gif'),
-    code: 'https://codepen.io/zhenhuei/pen/qMMgQX',
-    view: 'https://s.codepen.io/zhenhuei/debug/qMMgQX/PNkvYGVazXvA',
+    code: 'https://codepen.io/chenhuei/pen/jobOKE',
+    view: 'https://s.codepen.io/chenhuei/debug/jobOKE/NQMzYqyByEQk',
     skills: [
       'SCSS', 'PUG', 'SVG'
     ]

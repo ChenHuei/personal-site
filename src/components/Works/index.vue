@@ -29,15 +29,14 @@
                 {{skill}}
               </li>
             </ul>
-            <div
-              v-if="work.code"
-              class="button">
+            <template v-if="work.code">
               <a
+                class="button"
                 :href="work.code"
                 target="_blank">
                 原始碼
               </a>
-            </div>
+            </template>
           </div>
         </div>
       </div>
@@ -128,19 +127,15 @@ export default {
             @include flexCenter;
             padding: 8px 16px;
             margin-top: 16px;
+            color: color(grey);
             border: 1px solid color(black);
             border-radius: 8px;
+            text-decoration: none;
             transition: .5s;
             cursor: pointer;
             &:hover {
+              color: color(white);
               background-color: color(black);
-              > a {
-                color: color(white);
-              }
-            }
-            > a {
-              color: color(grey);
-              text-decoration: none;
             }
           }
         }
@@ -169,6 +164,7 @@ export default {
             text-align: center;
           }
           > .skill {
+            @include size(100%, auto);
             > h4 {
               text-align: center;
             }
