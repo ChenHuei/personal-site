@@ -18,8 +18,7 @@
             {{item.phone}}</div>
           <a
             class="email"
-            href="mailto:aaa830714@gmail.com"
-            target="_blank">
+            href="mailto:aaa830714@gmail.com">
             <font-awesome-icon icon="envelope" />
             {{item.email}}
           </a>

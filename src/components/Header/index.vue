@@ -67,7 +67,6 @@ export default {
   methods: {
     onScroll () {
       this.nowLocation = window.scrollY
-      this.setPosition()
     },
     openContainerHandler () {
       this.isOpen = true
@@ -84,6 +83,7 @@ export default {
       const diff = Math.floor((this.endLocation - this.nowLocation) * 0.1)
       this.closeContainerHandler()
       if (diff === 0) {
+        window.scroll(0, this.endLocation)
         return false
       } else {
         this.nowLocation += diff
@@ -94,16 +94,18 @@ export default {
     setPosition () {
       const items = ['about', 'resume', 'works']
       items.forEach(item => {
-        this.$set(this.location, item, document.querySelector(`#${item}`).offsetTop - 40)
+        this.$set(this.location, item, document.querySelector(`#${item}`).offsetTop - 60)
       })
     }
   },
   mounted () {
     window.addEventListener('scroll', this.onScroll)
+    window.addEventListener('resize', this.setPosition)
     this.setPosition()
   },
   beforeDestroy () {
     window.removeEventListener('scroll', this.onScroll)
+    window.removeEventListener('resize', this.setPosition)
   }
 }
 </script>
