@@ -66,7 +66,7 @@ export default {
   },
   methods: {
     onScroll () {
-      this.nowLocation = window.scrollY
+      this.nowLocation = window.pageYOffset
     },
     openContainerHandler () {
       this.isOpen = true
@@ -84,7 +84,6 @@ export default {
       this.closeContainerHandler()
       if (diff === 0) {
         window.scroll(0, this.endLocation)
-        return false
       } else {
         this.nowLocation += diff
         window.scroll(0, this.nowLocation)
