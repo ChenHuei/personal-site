@@ -17,7 +17,7 @@ export const ABOUT_INFORMATION = [
   {
     name: '陳振輝',
     jobs: '前端工程師 (Front-End)',
-    description: '目前擔任 英特拉金融科技 前端工程師 (2018/07/09 - Now)。這段時間除了使用 JQuery 維護公司既有網站並開發新功能之外，也在新的專案中導入 Vue.js、Vuex、Scss 等工具，並和後端討論、串接 RESTful API 開發新的專案(如：漢堡王、佛光山 ...)。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
+    description: '先前任職於 英特拉金融科技 前端工程師 ( 2018/07/09 - 2019/05/17 )，除了負責維護公司既有的網站並開發新功能之外( 使用 JQuery )，也在新的專案中導入 Vue.js、Vuex、SCSS 等工具，並和後端討論及串接 RESTful API 開發新的專案( 如：漢堡王、佛光山 ... )。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
     phone: '0986-776-379',
     email: 'aaa830714@gmail.com'
   }
@@ -27,7 +27,7 @@ export const RESUME_INFORMATION = [
   {
     company: '英特拉金融科技',
     jobs: '前端工程師',
-    year: '2018/07 ~ Now',
+    year: '2018/07 ~ 2019/05',
     list: [
       {
         title: '佛光山購物車',
