@@ -7,7 +7,9 @@
           class="item"
           v-for="item in FOOTER_ITEMS"
           :key="item.url">
-          <a :href="item.url" target="_blank">
+          <a
+            :href="item.url"
+            :target="targetHandler(item.tag)">
             <font-awesome-icon :icon="iconHandler(item)" />
           </a>
           </div>
@@ -28,6 +30,9 @@ export default {
   methods: {
     iconHandler (item) {
       return item.isBrand ? { prefix: 'fab', iconName: item.tag } : item.tag
+    },
+    targetHandler (tag) {
+      return tag === 'envelope' ? '' : '_blank'
     }
   }
 }

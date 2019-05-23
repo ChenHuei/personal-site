@@ -133,18 +133,35 @@ export default {
       margin: 0;
       padding: 0;
       > li {
-        padding: 16px 24px;
+        @include size(96px, 48px);
+        @include flexCenter;
+        position: relative;
+        padding: 4px 16px;
+        margin-right: 8px;
         color: color(white);
         font-weight: 500;
         opacity: .6;
         transition: .5s;
         list-style: none;
         cursor: pointer;
+        &::after {
+          content: '';
+          @include size(0px);
+          position: absolute;
+          bottom: 2px;
+          left: 50%;
+          background-color: color(white);
+          transition: .5s;
+        }
         &:last-child {
-          padding: 16px 0 16px 16px;
+          margin-right: 0;
         }
         &:hover {
           opacity: 1;
+          &::after {
+            @include size(100%, 2px);
+            left: 0;
+          }
         }
       }
     }
