@@ -12,11 +12,11 @@ export default {
 <style lang="scss">
 @import './styles/import';
 #app {
-  @include size(98.5vw, 100vh);
+  @include size(calc(100vw -15px), 100vh);
   font-family: $font-family;
   color: color(black);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 659px) {
   #app {
     @include size(100vw, 100vh);
   }
