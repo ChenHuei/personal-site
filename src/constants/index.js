@@ -118,13 +118,13 @@ export const WORKS_INFORMATION = [
     ]
   },
   {
-    name: 'Vue.js Theater',
-    description: '以滾動的方式移動畫面、製作收入購物車的動畫',
-    logo: require('../assets/works/03.gif'),
-    code: 'https://codepen.io/chenhuei/pen/OYyKPY',
-    view: 'https://s.codepen.io/chenhuei/debug/OYyKPY/bYAdyewXwNok',
+    name: 'Ass Photography',
+    description: '個人工作室形象網站',
+    logo: require('../assets/works/03.png'),
+    view: 'https://chenhuei.github.io/assPhotography/',
     skills: [
-      'Vue.js', 'SCSS'
+      '串接 Firebase database 和 Google 會員登入',
+      '使用 SCSS 規劃響應式網頁版型'
     ]
   },
   {
