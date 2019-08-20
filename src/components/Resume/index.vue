@@ -98,7 +98,7 @@ export default {
           margin: 0;
           padding: 28px;
           text-align: right;
-          > li {
+          > .item {
             margin-bottom: 8px;
             font-size: 16px;
             line-height: 24px;
@@ -121,6 +121,13 @@ export default {
               }
               > .skill {
                 margin-left: 4px;
+              }
+            }
+            &:last-child {
+              > .main {
+                > a {
+                  left: -8px;
+                }
               }
             }
             > .description, > .skill {
@@ -198,7 +205,7 @@ export default {
           > .items {
             padding: 20px 28px 28px;
             text-align: left;
-            > li {
+            > .item {
               font-size: 14px;
               > .main {
                 justify-content: flex-start;

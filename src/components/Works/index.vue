@@ -21,12 +21,15 @@
           </a>
           <div class="description">{{work.description}}</div>
           <div class="skill">
-            <h4>相關技術：</h4>
+            <h4>專案內容：</h4>
             <ul>
               <li
-                v-for="skill in work.skills"
+                v-for="(skill, index) in work.skills"
                 :key="skill">
-                {{skill}}
+                <div class="index">{{index + 1}}.</div>
+                <div class="content">
+                  {{skill}}
+                </div>
               </li>
             </ul>
             <template v-if="work.code">
@@ -94,51 +97,63 @@ export default {
           opacity: .8;
         }
       }
-      > .right {
-        @include size(40%, 100%);
-        padding: 0 24px;
-        font-size: 14px;
-        > a {
-          font-size: 16px;
-          font-weight: 700;
-          color: color(black);
-          text-decoration: none;
+    }
+  }
+}
+
+.right {
+  @include size(40%, 100%);
+  padding: 0 24px;
+  font-size: 14px;
+  > a {
+    font-size: 16px;
+    font-weight: 700;
+    color: color(black);
+    text-decoration: none;
+  }
+  > .description {
+    margin: 8px 0 16px;
+    line-height: 24px;
+    color: color(grey);
+  }
+  > .skill {
+    > h4 {
+      margin: 0 0 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: color(black);
+    }
+    > ul {
+      margin: 0;
+      padding: 0;
+      > li {
+        display: flex;
+        line-height: 24px;
+        color: color(grey);
+        list-style: none;
+        > .index {
+          @include size(16px, 24px);
+          @include flexCenter;
         }
-        > .description {
-          margin: 8px 0 16px;
-          line-height: 24px;
-          color: color(grey);
+        > .content {
+          @include size(calc(100% - 16px), auto);
         }
-        > .skill {
-          > h4 {
-            margin: 0 0 8px;
-            font-weight: 400;
-          }
-          > ul {
-            margin: 0;
-            padding: 0;
-            > li {
-              list-style: none;
-              margin-bottom: 8px;
-            }
-          }
-          > .button {
-            @include size(50%, 32px);
-            @include flexCenter;
-            padding: 8px 16px;
-            margin-top: 16px;
-            color: color(grey);
-            border: 1px solid color(black);
-            border-radius: 8px;
-            text-decoration: none;
-            transition: .5s;
-            cursor: pointer;
-            &:hover {
-              color: color(white);
-              background-color: color(black);
-            }
-          }
-        }
+      }
+    }
+    > .button {
+      @include size(50%, 32px);
+      @include flexCenter;
+      padding: 8px 16px;
+      margin-top: 16px;
+      color: color(grey);
+      border: 1px solid color(black);
+      border-radius: 8px;
+      text-decoration: none;
+      transition: .5s;
+      cursor: pointer;
+      &:hover {
+        color: color(white);
+        background-color: color(black);
       }
     }
   }
@@ -155,41 +170,43 @@ export default {
         > a {
           @include size(100%, 50%);
         }
-        > .right {
-          @include flexCenter;
-          @include size(100%, auto);
-          flex-direction: column;
-          margin-top: 20px;
-          > .description {
-            text-align: center;
+      }
+    }
+  }
+  .right {
+    @include flexCenter;
+    @include size(100%, auto);
+    flex-direction: column;
+    margin-top: 20px;
+    > .description {
+      text-align: center;
+    }
+    > .skill {
+      @include size(100%, auto);
+      > h4 {
+        text-align: center;
+      }
+      > ul {
+        @include flexCenter;
+        flex-direction: column;
+        > li {
+          margin: 0 8px 0 0;
+          text-align: center;
+          &::after {
+            content: ',';
           }
-          > .skill {
-            @include size(100%, auto);
-            > h4 {
-              text-align: center;
-            }
-            > ul {
-              @include flexCenter;
-              > li {
-                margin: 0 8px 0 0;
-                &::after {
-                  content: ',';
-                }
-                &:last-child {
-                  &::after {
-                    content: '';
-                  }
-                }
-              }
-            }
-            > .button {
-              @include size(100%, 32px);
-              margin-top: 12px;
+          &:last-child {
+            &::after {
+              content: '';
             }
           }
         }
       }
+      > .button {
+        @include size(100%, 32px);
+        margin-top: 12px;
+      }
     }
-}
+  }
 }
 </style>
