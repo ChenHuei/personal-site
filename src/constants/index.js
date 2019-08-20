@@ -103,7 +103,7 @@ export const WORKS_INFORMATION = [
     logo: require('../assets/works/01.png'),
     view: 'https://dev.intella.co/intella#forward',
     skills: [
-      '善用 jQuery Plugin 串接行動支付 ( LuckyPAY、ezPay、台灣Pay... )',
+      '串接行動支付 ( 台灣Pay、LuckyPAY、ezPay... )',
       '前端介面優化'
     ]
   },
@@ -123,8 +123,9 @@ export const WORKS_INFORMATION = [
     logo: require('../assets/works/03.png'),
     view: 'https://chenhuei.github.io/assPhotography/',
     skills: [
-      '串接 Firebase database 和 Google 會員登入',
-      '使用 SCSS 規劃響應式網頁版型'
+      '串接 Firebase database',
+      '串接 Google 會員登入',
+      '規劃響應式網頁版型'
     ]
   },
   {
@@ -144,7 +145,7 @@ export const WORKS_INFORMATION = [
     code: 'https://codepen.io/chenhuei/pen/eapJVV',
     view: 'https://s.codepen.io/chenhuei/debug/eapJVV/yoMZEWVOVKmk',
     skills: [
-      '以 Prototype 為基礎，搭配 jQuery 進行開發',
+      '以 Prototype 為基礎，搭配 jQuery 開發',
       '樣板練習 ( 以 Pug 和 Sass 為核心 )'
     ]
   },

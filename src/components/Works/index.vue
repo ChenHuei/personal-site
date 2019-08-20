@@ -162,13 +162,13 @@ export default {
   .works {
     > .container {
       > .work {
-        @include size(100%, 400px);
+        @include size(100%, auto);
         flex-direction: column;
         &:nth-child(2) {
           margin: 0 0 40px 0;
         }
         > a {
-          @include size(100%, 50%);
+          @include size(100%, 200px);
         }
       }
     }
@@ -190,15 +190,11 @@ export default {
         @include flexCenter;
         flex-direction: column;
         > li {
-          margin: 0 8px 0 0;
-          text-align: center;
-          &::after {
-            content: ',';
-          }
-          &:last-child {
-            &::after {
-              content: '';
-            }
+          @include size(100%, auto);
+          @include flexCenter;
+          > .content {
+            @include size(auto);
+            text-align: center;
           }
         }
       }
