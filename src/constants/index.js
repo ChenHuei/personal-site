@@ -41,7 +41,7 @@ export const RESUME_INFORMATION = [
       },
       {
         title: '發票管理平台',
-        description: '與行政人員討論需求、規劃流程並介接 ezPay 電子發票 API 開發線上平台',
+        description: '與行政人員討論需求、規劃流程並介接藍新金流的電子發票 API 開發線上平台',
         skill: 'Vue.js、Vuex、SCSS'
       },
       {

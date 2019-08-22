@@ -2,7 +2,6 @@
   <div class="home">
     <Header/>
     <About/>
-    <!-- <Skill/> -->
     <Resume/>
     <Works/>
     <Footer/>
@@ -17,7 +16,6 @@ export default {
     Header,
     About,
     Resume,
-    // Skill,
     Works,
     Footer
   }
