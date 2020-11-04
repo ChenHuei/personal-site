@@ -1,39 +1,29 @@
 <template>
   <section class="resume" id="resume">
-    <Title :text="'RESUME'"/>
+    <Title :text="'RESUME'" />
     <div class="container">
-      <div
-        class="step"
-        v-for="step in RESUME_INFORMATION"
-        :key="step.company">
+      <div class="step" v-for="step in RESUME_INFORMATION" :key="step.company">
         <div class="position">
           <div class="title">
-            {{step.company}} / {{step.jobs}} ({{step.year}})
+            {{ step.company }} / {{ step.jobs }} ({{ step.year }})
           </div>
           <ul class="items">
-            <li
-              class="item"
-              v-for="item in step.list"
-              :key="item.title">
+            <li class="item" v-for="item in step.list" :key="item.title">
               <div class="main">
                 <template v-if="item.link">
-                  <a
-                    :href="item.link"
-                    target="_blank">
-                    {{item.title}}
+                  <a :href="item.link" target="_blank">
+                    {{ item.title }}
                   </a>
                 </template>
                 <template v-else>
-                  {{item.title}}
+                  {{ item.title }}
                 </template>
               </div>
               <div class="description">
-                {{item.description}}
+                {{ item.description }}
               </div>
-              <div
-                v-if="item.skill"
-                class="skill">
-                {{item.skill}}
+              <div v-if="item.skill" class="skill">
+                {{ item.skill }}
               </div>
             </li>
           </ul>
@@ -48,7 +38,8 @@ import Title from '../Title'
 import { RESUME_INFORMATION } from '../../constants'
 export default {
   name: 'Resume',
-  data () {
+  // eslint-disable-next-line
+  data() {
     return {
       RESUME_INFORMATION
     }
@@ -81,7 +72,7 @@ export default {
           font-size: 20px;
           font-weight: 500;
           line-height: 32px;
-          letter-spacing: .4px;
+          letter-spacing: 0.4px;
           text-align: right;
           &::after {
             content: '';
@@ -99,7 +90,7 @@ export default {
           padding: 28px;
           text-align: right;
           > .item {
-            margin-bottom: 8px;
+            margin-bottom: 16px;
             font-size: 16px;
             line-height: 24px;
             list-style: none;
@@ -112,7 +103,7 @@ export default {
                 right: -8px;
                 color: color(black);
                 text-decoration: none;
-                transition: .5s;
+                transition: 0.5s;
                 padding: 0 8px;
                 &:hover {
                   color: color(white);
@@ -123,23 +114,17 @@ export default {
                 margin-left: 4px;
               }
             }
-            &:last-child {
-              > .main {
-                > a {
-                  left: -8px;
-                }
-              }
-            }
-            > .description, > .skill {
+            > .description,
+            > .skill {
               font-size: 12px;
               color: color(grey);
             }
             .skill {
               &::before {
-                content: '('
+                content: '(';
               }
               &::after {
-                content: ')'
+                content: ')';
               }
             }
             &:last-child {
@@ -165,6 +150,10 @@ export default {
             > li {
               > .main {
                 justify-content: flex-start;
+                > a {
+                  right: 0;
+                  left: -8px;
+                }
               }
             }
           }

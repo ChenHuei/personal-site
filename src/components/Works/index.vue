@@ -1,42 +1,28 @@
 <template>
   <section class="works" id="works">
-    <Title :text="'LATEST WORKS'"/>
+    <Title :text="'LATEST WORKS'" />
     <div class="container">
-      <div
-        class="work"
-        v-for="work in WORKS_INFORMATION"
-        :key="work.name">
-        <a
-          :href="work.view"
-          target="_blank">
-          <div
-            class="left"
-            :style="workStyleHandler(work.logo)"></div>
+      <div class="work" v-for="work in WORKS_INFORMATION" :key="work.name">
+        <a :href="work.view" target="_blank">
+          <div class="left" :style="workStyleHandler(work.logo)"></div>
         </a>
         <div class="right">
-          <a
-            :href="work.view"
-            target="_blank">
-            {{work.name}}
+          <a :href="work.view" target="_blank">
+            {{ work.name }}
           </a>
-          <div class="description">{{work.description}}</div>
+          <div class="description">{{ work.description }}</div>
           <div class="skill">
             <h4>專案內容：</h4>
             <ul>
-              <li
-                v-for="(skill, index) in work.skills"
-                :key="skill">
-                <div class="index">{{index + 1}}.</div>
+              <li v-for="(skill, index) in work.skills" :key="skill">
+                <div class="index">{{ index + 1 }}.</div>
                 <div class="content">
-                  {{skill}}
+                  {{ skill }}
                 </div>
               </li>
             </ul>
             <template v-if="work.code">
-              <a
-                class="button"
-                :href="work.code"
-                target="_blank">
+              <a class="button" :href="work.code" target="_blank">
                 原始碼
               </a>
             </template>
@@ -55,13 +41,13 @@ export default {
   components: {
     Title
   },
-  data () {
+  data() {
     return {
       WORKS_INFORMATION
     }
   },
   methods: {
-    workStyleHandler (url) {
+    workStyleHandler(url) {
       return {
         backgroundImage: `url(${url})`
       }
@@ -81,8 +67,11 @@ export default {
       @include size(100%, 240px);
       @include flexCenter;
       margin-bottom: 40px;
-      &:nth-child(2) {
-        margin: 30px 0 10px 0;
+      &:nth-child(3) {
+        margin: 4px 0 10px 0;
+      }
+      &:nth-child(4) {
+        margin: 30px 0 -20px 0;
       }
       &:last-child {
         margin-bottom: 0;
@@ -94,7 +83,7 @@ export default {
           @include bgi;
         }
         &:hover {
-          opacity: .8;
+          opacity: 0.8;
         }
       }
     }
@@ -149,7 +138,7 @@ export default {
       border: 1px solid color(black);
       border-radius: 8px;
       text-decoration: none;
-      transition: .5s;
+      transition: 0.5s;
       cursor: pointer;
       &:hover {
         color: color(white);
@@ -164,8 +153,12 @@ export default {
       > .work {
         @include size(100%, auto);
         flex-direction: column;
-        &:nth-child(2) {
-          margin: 0 0 40px 0;
+        &:nth-child(4) {
+          margin: 40px 0;
+
+          .right {
+            margin-top: -20px;
+          }
         }
         > a {
           @include size(100%, 200px);
