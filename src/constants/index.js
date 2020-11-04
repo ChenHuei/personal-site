@@ -25,29 +25,40 @@ export const ABOUT_INFORMATION = [
 
 export const RESUME_INFORMATION = [
   {
+    company: '雲端互動 (Cloud Interactive)',
+    jobs: '前端工程師',
+    year: '2019/09 ~ now',
+    list: [
+      {
+        title: '豪華郵輪集團 (Resorts World Genting)',
+        description: '使用 Nuxt.js 處理 SSR，以及搭配 google sheet api 管理多國語系'
+      },
+      {
+        title: '台塑電子商務平台',
+        description: '串接台塑 API 建構 RWD 的線上交易平台'
+      },
+      {
+        title: '安麗簡訊平台',
+        description: '使用 Typescript 及 Decorator 建構發送簡訊的前後台系統'
+      }
+    ]
+  },
+  {
     company: '英特拉金融科技',
     jobs: '前端工程師',
     year: '2018/07 ~ 2019/05',
     list: [
       {
-        title: '佛光山購物車',
-        description: '根據設計稿製作頁面，並透過 Cookies 將購物資訊帶到公司既有的支付平台進行交易',
-        skill: 'Vue.js、Cookies'
-      },
-      {
         title: '漢堡王點餐系統',
-        description: '與業務和設計師規劃流程、討論使用者故事，並透過 API 串接線上和線下交易(悠遊卡)',
-        skill: 'Vue.js、Vuex、SCSS'
+        description: '透過 API 串接線上和線下交易(悠遊卡)，開發線上點餐系統'
       },
       {
         title: '發票管理平台',
-        description: '與行政人員討論需求、規劃流程並介接藍新金流的電子發票 API 開發線上平台',
-        skill: 'Vue.js、Vuex、SCSS'
+        description: '與行政人員討論需求、規劃流程和介接藍新金流 API 開發線上發票平台'
       },
       {
         title: '特店平台',
-        description: '負責 ERP 系統前端介面，並沿用既有技術 jQuery 進行開發',
-        skill: 'jQuery'
+        description: '沿用既有技術 jQuery 進行維運和開發'
       }
     ]
   },
@@ -98,68 +109,90 @@ export const LINKS_ITEMS = [
 
 export const WORKS_INFORMATION = [
   {
+    name: '豪華郵輪集團 (網站關閉中...)',
+    description: '郵輪航線訂票平台系統 (前後台)',
+    logo: require('../assets/works/genting.jpeg'),
+    view: 'http://genting-cruise-www-sit.cloud-softwares.com/enUS',
+    skills: [
+      '使用 Nuxt.js 處理 SSR',
+      'google sheet api 管理多國語系',
+      'RWD'
+    ]
+  },
+  {
+    name: '台塑電子商務平台',
+    description: '線上交易平台',
+    logo: require('../assets/works/plastic.png'),
+    view: 'https://formosa-pepp-web-sit.cloud-interactive.com/login',
+    skills: [
+      '介接台塑 API',
+      'google sheet api 管理多國語系',
+      'RWD'
+    ]
+  },
+  {
     name: 'Scan2Pay',
     description: '串接線上支付方式',
-    logo: require('../assets/works/01.png'),
+    logo: require('../assets/works/scan2pay.png'),
     view: 'https://dev.intella.co/intella#forward',
     skills: [
-      '串接行動支付 ( 台灣Pay、LuckyPAY、ezPay... )',
+      '串接行動支付 (台灣Pay、LuckyPAY、ezPay...)',
       '前端介面優化'
     ]
   },
   {
     name: '漢堡王',
     description: '平板(iPad)點餐系統',
-    logo: require('../assets/works/02.png'),
+    logo: require('../assets/works/burger-king.png'),
     view: 'https://dev.intella.co/order-system/#/',
     skills: [
-      '前後端分離設計 ( Vue.js + RESTful API )',
-      '使用 Vue 相關套件 ( Vuex、Vuetify )'
+      '前後端分離設計',
+      'Vuex、Vuetify'
     ]
   },
   {
     name: 'Ass Photography',
     description: '個人工作室形象網站',
-    logo: require('../assets/works/03.png'),
-    view: 'https://chenhuei.github.io/assPhotography/',
+    logo: require('../assets/works/ass-photography.png'),
+    view: 'https://chenhuei.github.io/AssPhotography-html/',
     skills: [
       '串接 Firebase database',
       '串接 Google 會員登入',
       '規劃響應式網頁版型'
     ]
-  },
-  {
-    name: 'Facebook Login',
-    description: '串接 Facebook 登入 API 並取得登入者名稱及大頭貼',
-    logo: require('../assets/works/04.gif'),
-    view: 'https://s.codepen.io/chenhuei/debug/dEYxZQ/LDAmdPaEaWOr',
-    skills: [
-      '介接 Facebook Login API',
-      '樣板練習 ( 以 Vue.js 和 SCSS 為核心 )'
-    ]
-  },
-  {
-    name: 'Game',
-    description: '實作 JS 原型鍊',
-    logo: require('../assets/works/05.gif'),
-    code: 'https://codepen.io/chenhuei/pen/eapJVV',
-    view: 'https://s.codepen.io/chenhuei/debug/eapJVV/yoMZEWVOVKmk',
-    skills: [
-      '以 Prototype 為基礎，搭配 jQuery 開發',
-      '樣板練習 ( 以 Pug 和 Sass 為核心 )'
-    ]
-  },
-  {
-    name: '天氣盒子',
-    description: '模擬天氣預報',
-    logo: require('../assets/works/06.gif'),
-    code: 'https://codepen.io/chenhuei/pen/jobOKE',
-    view: 'https://s.codepen.io/chenhuei/debug/jobOKE/NQMzYqyByEQk',
-    skills: [
-      '使用 SCSS 撰寫動畫特效',
-      '製作 SVG'
-    ]
   }
+  // {
+  //   name: 'Facebook Login',
+  //   description: '串接 Facebook 登入 API 並取得登入者名稱及大頭貼',
+  //   logo: require('../assets/works/facebook.gif'),
+  //   view: 'https://s.codepen.io/chenhuei/debug/dEYxZQ/LDAmdPaEaWOr',
+  //   skills: [
+  //     '介接 Facebook Login API',
+  //     '樣板練習 ( 以 Vue.js 和 SCSS 為核心 )'
+  //   ]
+  // },
+  // {
+  //   name: 'Game',
+  //   description: '實作 JS 原型鍊',
+  //   logo: require('../assets/works/game.gif'),
+  //   code: 'https://codepen.io/chenhuei/pen/eapJVV',
+  //   view: 'https://s.codepen.io/chenhuei/debug/eapJVV/yoMZEWVOVKmk',
+  //   skills: [
+  //     '以 Prototype 為基礎，搭配 jQuery 開發',
+  //     '樣板練習 ( 以 Pug 和 Sass 為核心 )'
+  //   ]
+  // },
+  // {
+  //   name: '天氣盒子',
+  //   description: '模擬天氣預報',
+  //   logo: require('../assets/works/weather.gif'),
+  //   code: 'https://codepen.io/chenhuei/pen/jobOKE',
+  //   view: 'https://s.codepen.io/chenhuei/debug/jobOKE/NQMzYqyByEQk',
+  //   skills: [
+  //     '使用 SCSS 撰寫動畫特效',
+  //     '製作 SVG'
+  //   ]
+  // }
 ]
 
 export const FOOTER_ITEMS = [
