@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    <Header/>
-    <About/>
-    <Resume/>
-    <Works/>
-    <Footer/>
+    <Header />
+    <About />
+    <Resume />
+    <Works />
+    <Footer />
   </div>
 </template>
 

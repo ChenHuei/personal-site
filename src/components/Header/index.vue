@@ -1,32 +1,26 @@
 <template>
   <nav class="header">
     <div class="left">
-      <div
-        class="logo"
-        @click="navigateHandler('about')">
-      </div>
+      <div class="logo" @click="navigateHandler('about')"></div>
     </div>
     <div class="right">
       <ul>
         <li
           v-for="item in HEADER_ITEMS"
           :key="item.id"
-          @click="navigateHandler(item.label)">
-          {{item.label}}
+          @click="navigateHandler(item.label)"
+        >
+          {{ item.label }}
         </li>
       </ul>
-      <font-awesome-icon @click="openContainerHandler" icon="bars"/>
+      <font-awesome-icon @click="openContainerHandler" icon="bars" />
     </div>
     <div :class="containerClassHandler">
-      <div
-        class="left"
-        @click="closeContainerHandler"></div>
+      <div class="left" @click="closeContainerHandler"></div>
       <div class="right">
         <div class="title">
           <h4>Zhen Huei</h4>
-          <div
-            class="cancel"
-            @click="closeContainerHandler">
+          <div class="cancel" @click="closeContainerHandler">
             X
           </div>
         </div>
@@ -34,8 +28,9 @@
           <li
             v-for="item in HEADER_ITEMS"
             :key="item.id"
-            @click="navigateHandler(item.label)">
-            {{item.label}}
+            @click="navigateHandler(item.label)"
+          >
+            {{ item.label }}
           </li>
         </ul>
       </div>
@@ -47,7 +42,7 @@
 import { HEADER_ITEMS } from '@/constants'
 export default {
   name: 'Header',
-  data () {
+  data() {
     return {
       isOpen: false,
       location: {},
@@ -57,7 +52,7 @@ export default {
     }
   },
   computed: {
-    containerClassHandler () {
+    containerClassHandler() {
       return {
         container: true,
         open: this.isOpen
@@ -65,21 +60,21 @@ export default {
     }
   },
   methods: {
-    onScroll () {
+    onScroll() {
       this.nowLocation = window.pageYOffset
     },
-    openContainerHandler () {
+    openContainerHandler() {
       this.isOpen = true
     },
-    closeContainerHandler () {
+    closeContainerHandler() {
       this.isOpen = false
     },
-    navigateHandler (label) {
+    navigateHandler(label) {
       const link = label.toLowerCase()
       this.endLocation = this.location[link]
       this.animation()
     },
-    animation () {
+    animation() {
       const diff = Math.floor((this.endLocation - this.nowLocation) * 0.1)
       this.closeContainerHandler()
       if (diff === 0) {
@@ -90,19 +85,23 @@ export default {
         window.requestAnimationFrame(this.animation)
       }
     },
-    setPosition () {
+    setPosition() {
       const items = ['about', 'resume', 'works']
-      items.forEach(item => {
-        this.$set(this.location, item, document.querySelector(`#${item}`).offsetTop - 60)
+      items.forEach((item) => {
+        this.$set(
+          this.location,
+          item,
+          document.querySelector(`#${item}`).offsetTop - 60
+        )
       })
     }
   },
-  mounted () {
+  mounted() {
     window.addEventListener('scroll', this.onScroll)
     window.addEventListener('resize', this.setPosition)
     this.setPosition()
   },
-  beforeDestroy () {
+  beforeDestroy() {
     window.removeEventListener('scroll', this.onScroll)
     window.removeEventListener('resize', this.setPosition)
   }
@@ -140,8 +139,8 @@ export default {
         margin-right: 8px;
         color: color(white);
         font-weight: 500;
-        opacity: .6;
-        transition: .5s;
+        opacity: 0.6;
+        transition: 0.5s;
         list-style: none;
         cursor: pointer;
         &::after {
@@ -151,7 +150,7 @@ export default {
           bottom: 2px;
           left: 50%;
           background-color: color(white);
-          transition: .5s;
+          transition: 0.5s;
         }
         &:last-child {
           margin-right: 0;
@@ -171,7 +170,7 @@ export default {
       color: color(white);
       cursor: pointer;
       &:hover {
-        opacity: .8;
+        opacity: 0.8;
       }
     }
   }
@@ -180,11 +179,11 @@ export default {
     @include fixed;
     @include flexCenter;
     left: 150vw;
-    transition: .5s;
+    transition: 0.5s;
     > .left {
       @include size(35%, 100%);
       background-color: color(black);
-      opacity: .4;
+      opacity: 0.4;
       cursor: pointer;
     }
     > .right {
@@ -207,7 +206,7 @@ export default {
           padding: 4px 8px;
           border-radius: 50%;
           transform: translateY(-50%);
-          transition: .5s;
+          transition: 0.5s;
           cursor: pointer;
           &:hover {
             font-weight: 700;

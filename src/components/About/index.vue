@@ -1,6 +1,6 @@
 <template>
   <section class="about" id="about">
-    <Title :text="'ABOUT ME'"/>
+    <Title :text="'ABOUT ME'" />
     <div class="container">
       <div class="left">
         <div class="cover"></div>
@@ -9,18 +9,18 @@
         <div
           class="introduce"
           v-for="item in ABOUT_INFORMATION"
-          :key="item.name">
-          <div class="name">{{item.name}}</div>
-          <div class="jobs">{{item.jobs}}</div>
-          <div class="description">{{item.description}}</div>
+          :key="item.name"
+        >
+          <div class="name">{{ item.name }}</div>
+          <div class="jobs">{{ item.jobs }}</div>
+          <div class="description">{{ item.description }}</div>
           <div class="phone">
             <font-awesome-icon icon="mobile-alt" />
-            {{item.phone}}</div>
-          <a
-            class="email"
-            href="mailto:aaa830714@gmail.com">
+            {{ item.phone }}
+          </div>
+          <a class="email" href="mailto:aaa830714@gmail.com">
             <font-awesome-icon icon="envelope" />
-            {{item.email}}
+            {{ item.email }}
           </a>
         </div>
         <div class="links">
@@ -28,9 +28,10 @@
             v-for="item in LINKS_ITEMS"
             :key="item.link"
             :href="item.link"
-            target="_blank">
+            target="_blank"
+          >
             <div class="button">
-              {{item.name}}
+              {{ item.name }}
             </div>
           </a>
         </div>
@@ -47,7 +48,7 @@ export default {
   components: {
     Title
   },
-  data () {
+  data() {
     return {
       LINKS_ITEMS,
       ABOUT_INFORMATION
@@ -89,7 +90,7 @@ export default {
         > .description {
           color: color(grey);
           text-align: justify;
-          letter-spacing: .2px;
+          letter-spacing: 0.2px;
         }
         > .phone {
           margin: 16px 0 4px;
@@ -120,7 +121,7 @@ export default {
             margin-right: 24px;
             border-radius: 8px;
             border: 1px solid color(black);
-            transition: .5s;
+            transition: 0.5s;
             cursor: pointer;
             &:hover {
               color: color(white);
