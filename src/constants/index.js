@@ -18,7 +18,7 @@ export const ABOUT_INFORMATION = [
     name: '陳振輝',
     jobs: '前端工程師 (Front-End Engineer)',
     description:
-      '擁有兩年半前端開發經驗，熟悉 Vue.js、Nuxt.js。追求簡潔易讀的程式碼，遵守 DRY 的開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
+      '擁有兩年半前端開發經驗，熟悉 Vue.js、Nuxt.js、Typescript。追求簡潔易讀的程式碼，遵守 DRY 的開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
     phone: '0986-776-379',
     email: 'aaa830714@gmail.com',
   },
@@ -40,7 +40,7 @@ export const RESUME_INFORMATION = [
       },
       {
         title: '安麗簡訊平台 & 直播平台',
-        description: '使用 Typescript 及 Decorator 建構前後台系統',
+        description: '使用 Typescript with vue-property-decorato 建構前後台系統',
       },
     ],
   },
@@ -116,7 +116,7 @@ export const WORKS_INFORMATION = [
     logo: require('../assets/works/huei-bei-wedding.png'),
     view: 'https://chenhuei.github.io/huei-bei-wedding/',
     skills: [
-      '增加 pwa (PageSpeed  評分 90+)',
+      '增加 PWA (PageSpeed  評分 90+)',
       '使用 GSAP and ScrollMagic 製作動畫',
       '串連 LINE Bot 並透過 server-sent event 製作彈幕特效',
     ],
@@ -126,14 +126,14 @@ export const WORKS_INFORMATION = [
     description: '郵輪航線訂票平台系統 (前後台)',
     logo: require('../assets/works/genting.jpeg'),
     view: 'http://genting-cruise-www-sit.cloud-softwares.com/enUS',
-    skills: ['使用 Nuxt.js 處理 SSR', 'google sheet api 管理多國語系', 'RWD'],
+    skills: ['使用 Nuxt.js 處理 SSR', 'google sheet API 管理多國語系', 'RWD'],
   },
   {
     name: '台塑電子商務平台',
     description: '線上交易平台',
     logo: require('../assets/works/plastic.png'),
     view: 'https://formosa-pepp-web-sit.cloud-interactive.com/login',
-    skills: ['與台塑討論及介接 API', 'google sheet api 管理多國語系', 'RWD'],
+    skills: ['與台塑討論及介接 API', 'google sheet API 管理多國語系', 'RWD'],
   },
   {
     name: 'Scan2Pay',
