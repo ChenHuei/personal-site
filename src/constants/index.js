@@ -32,7 +32,7 @@ export const RESUME_INFORMATION = [
     list: [
       {
         title: '豪華郵輪集團 (Resorts World Genting)',
-        description: '使用 Nuxt.js 處理 SSR，以及搭配 google sheet api 管理多國語系',
+        description: '使用 Nuxt.js 處理 SSR，以及搭配 google sheet API 管理多國語系',
       },
       {
         title: '台塑電子商務平台',
