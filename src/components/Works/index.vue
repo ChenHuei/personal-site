@@ -22,9 +22,7 @@
               </li>
             </ul>
             <template v-if="work.code">
-              <a class="button" :href="work.code" target="_blank">
-                原始碼
-              </a>
+              <a class="button" :href="work.code" target="_blank"> 原始碼 </a>
             </template>
           </div>
         </div>
@@ -39,20 +37,20 @@ import { WORKS_INFORMATION } from '../../constants'
 export default {
   name: 'About',
   components: {
-    Title
+    Title,
   },
   data() {
     return {
-      WORKS_INFORMATION
+      WORKS_INFORMATION,
     }
   },
   methods: {
     workStyleHandler(url) {
       return {
-        backgroundImage: `url(${url})`
+        backgroundImage: `url(${url})`,
       }
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -67,12 +65,6 @@ export default {
       @include size(100%, 240px);
       @include flexCenter;
       margin-bottom: 40px;
-      &:nth-child(3) {
-        margin: 4px 0 10px 0;
-      }
-      &:nth-child(4) {
-        margin: 30px 0 -20px 0;
-      }
       &:last-child {
         margin-bottom: 0;
       }
