@@ -17,8 +17,8 @@ export default {
     About,
     Resume,
     Works,
-    Footer
-  }
+    Footer,
+  },
 }
 </script>
 

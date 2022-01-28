@@ -5,14 +5,14 @@
 </template>
 <script>
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
 
 <style lang="scss">
 @import './styles/import';
 #app {
-  @include size(calc(100vw -15px), 100vh);
+  @include size(calc(100vw - 15px), 100vh);
   font-family: $font-family;
   color: color(black);
 }
