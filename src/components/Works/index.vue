@@ -145,13 +145,7 @@ export default {
       > .work {
         @include size(100%, auto);
         flex-direction: column;
-        &:nth-child(4) {
-          margin: 40px 0;
 
-          .right {
-            margin-top: -20px;
-          }
-        }
         > a {
           @include size(100%, 200px);
         }
