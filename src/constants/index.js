@@ -16,7 +16,7 @@ export const HEADER_ITEMS = [
 export const ABOUT_INFORMATION = [
   {
     name: '陳振輝',
-    jobs: '前端工程師 (Front-End Engineer)',
+    jobs: '資深前端工程師 (Senior Front-End Engineer)',
     description:
       '擁有五年前端開發經驗，熟悉 Typescript、React、Vue.js。追求簡潔易讀的程式碼，遵守 DRY 的開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
     phone: '0986-776-379',
@@ -27,7 +27,7 @@ export const ABOUT_INFORMATION = [
 export const RESUME_INFORMATION = [
   {
     company: 'MAYO 鼎恒數位科技',
-    jobs: '前端工程師',
+    jobs: '資深前端工程師',
     year: '2022/06 ~ now',
     list: [
       {
@@ -54,6 +54,11 @@ export const RESUME_INFORMATION = [
       {
         title: 'Dashboard Monitor',
         description: '使用 Gatsby 搭配 react query 建構後台',
+      },
+      {
+        title: 'Mentor',
+        description:
+          '日常除了擔任另外三位 front-end 的 Mentor 之外，同時也負責規劃和評估其他 junior 的 React 相關學習',
       },
     ],
   },
