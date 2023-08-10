@@ -18,21 +18,35 @@ export const ABOUT_INFORMATION = [
     name: '陳振輝',
     jobs: '前端工程師 (Front-End Engineer)',
     description:
-      '擁有三年半前端開發經驗，熟悉 Typescript、React、Vue.js。追求簡潔易讀的程式碼，遵守 DRY 的開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
+      '擁有五年前端開發經驗，熟悉 Typescript、React、Vue.js。追求簡潔易讀的程式碼，遵守 DRY 的開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
     phone: '0986-776-379',
     email: 'aaa830714@gmail.com',
   },
 ]
 
-export const RESUME_INFORMATION = [
+export const RESUME_INFORMATION = [{
+    company: 'MAYO 鼎恒數位科技',
+    jobs: '前端工程師',
+    year: '2022/06 ~ now',
+    list: [
+      {
+        title: 'Apollo Asia',
+        description: '優化既有產品：增加網站 CSP 設定、統一專案的時區設定、修復網站長期以來久置會白頁的情況',
+      },
+      {
+        title: 'Apollo Asia - 越南',
+        description: '在既有的人資系統中 (React) 增加越南地區的功能和流程',
+      },
+    ],
+  },
   {
     company: '香港電視購物網絡 (HKTVmall)',
     jobs: '前端工程師',
-    year: '2021/07 ~ now',
+    year: '2021/07 ~ 2022/06',
     list: [
       {
         title: '無人商店購物網站',
-        description: '使用 Next.js 搭配 redux saga and ionic framework 實作仿 APP 網站',
+        description: '使用 Next.js 搭配 redux saga and ionic framework 實作仿 APP 網站 (WebView)，以及負責串接第三方金流、調整 react-native 相關功能',
       },
       {
         title: 'Dashboard Monitor',
@@ -66,11 +80,11 @@ export const RESUME_INFORMATION = [
     list: [
       {
         title: '漢堡王點餐系統',
-        description: '透過 API 串接線上和線下交易實作線上點餐平台',
+        description: '串接金流 API，開發線上點餐平台',
       },
       {
         title: '發票管理平台',
-        description: '與行政人員討論需求、規劃流程並介接藍新金流 API 開發電子發票平台',
+        description: '與行政人員討論需求、規劃流程，並串接藍新金流 API 開發電子發票平台',
       },
       {
         title: '特店平台',
@@ -129,7 +143,7 @@ export const WORKS_INFORMATION = [
     description: '記帳網站',
     logo: require('../assets/works/huei-bei-money.png'),
     view: 'https://huei-bei-money.vercel.app',
-    skills: ['vite with react-ts', 'PWA', 'Firebase API', 'Material UI 搭配 React Hook Form'],
+    skills: ['vite with react-ts', 'PWA', 'Firebase Database and Authentication', 'Material UI & React Hook Form', 'GitHub Actions'],
   },
   {
     name: 'Huei & Bei Wedding',
@@ -137,11 +151,11 @@ export const WORKS_INFORMATION = [
     logo: require('../assets/works/huei-bei-wedding.png'),
     view: 'https://chenhuei.github.io/huei-bei-wedding/',
     skills: [
-      'PWA',
+      '@nuxtjs/pwa',
       'Lighthouse & PageSpeed 評分 90+',
       'GSAP & ScrollMagic',
       'LINE Bot API & server-sent event 製作彈幕特效',
-      'AWS amplify & route 53 建置環境 ',
+      'AWS amplify & route 53',
     ],
   },
   {
@@ -149,14 +163,14 @@ export const WORKS_INFORMATION = [
     description: '郵輪航線訂票平台系統 (前後台)',
     logo: require('../assets/works/genting.png'),
     view: 'http://genting-cruise-www-sit.cloud-softwares.com/enUS',
-    skills: ['Nuxt.js', 'google sheet API 管理多國語系', 'RWD & WebView'],
+    skills: ['Nuxt.js', 'google sheet API 管理多國語系', 'WebView (RWD)'],
   },
   {
     name: '台塑電子商務平台',
     description: '線上交易平台',
     logo: require('../assets/works/plastic.png'),
     view: 'https://formosa-pepp-web-sit.cloud-interactive.com/login',
-    skills: ['與台塑後端討論及介接 API', 'google sheet API 管理多國語系', 'RWD'],
+    skills: ['Nuxt.js', '與台塑後端討論及介接 API', 'google sheet API 管理多國語系', 'RWD'],
   },
   {
     name: 'Scan2Pay',
