@@ -24,14 +24,16 @@ export const ABOUT_INFORMATION = [
   },
 ]
 
-export const RESUME_INFORMATION = [{
+export const RESUME_INFORMATION = [
+  {
     company: 'MAYO 鼎恒數位科技',
     jobs: '前端工程師',
     year: '2022/06 ~ now',
     list: [
       {
         title: 'Apollo Asia',
-        description: '優化既有產品，包括增加網站 CSP 設定、統一專案的時區設定、修復網站長期以來久置會白頁的情況',
+        description:
+          '優化既有產品，包括增加網站 CSP 設定、統一專案的時區設定、修復網站長期以來久置會白頁的情況',
       },
       {
         title: 'Apollo Asia - 越南',
@@ -46,7 +48,8 @@ export const RESUME_INFORMATION = [{
     list: [
       {
         title: '無人商店購物網站',
-        description: '使用 Next.js 搭配 redux saga and ionic framework 實作仿 APP 網站 (WebView)，以及負責串接第三方金流、調整 react-native 相關功能',
+        description:
+          '使用 Next.js 搭配 redux saga and ionic framework 實作仿 APP 網站 (WebView)，以及負責串接第三方金流、調整 react-native 相關功能',
       },
       {
         title: 'Dashboard Monitor',
@@ -100,7 +103,8 @@ export const RESUME_INFORMATION = [{
       {
         title: '校系影音分享 (Link)',
         description: '分享大學所學和課外活動的經驗及反思',
-        link: 'https://ioh.tw/talks/%E6%B7%A1%E6%B1%9F%E8%B3%87%E7%AE%A1%E7%B3%BB-%E9%99%B3%E6%8C%AF%E8%BC%9D-zhen-huei-chen-tw-study-tku-bde',
+        link:
+          'https://ioh.tw/talks/%E6%B7%A1%E6%B1%9F%E8%B3%87%E7%AE%A1%E7%B3%BB-%E9%99%B3%E6%8C%AF%E8%BC%9D-zhen-huei-chen-tw-study-tku-bde',
       },
       {
         title: '全台校園演講',
@@ -143,7 +147,13 @@ export const WORKS_INFORMATION = [
     description: '記帳網站',
     logo: require('../assets/works/huei-bei-money.png'),
     view: 'https://huei-bei-money.vercel.app',
-    skills: ['vite with react-ts', 'PWA', 'Firebase Database and Authentication', 'Material UI & React Hook Form', 'GitHub Actions'],
+    skills: [
+      'vite with react-ts',
+      'PWA',
+      'Firebase Database & Authentication',
+      'Material UI & React Hook Form',
+      'GitHub Actions',
+    ],
   },
   {
     name: 'Huei & Bei Wedding',
@@ -154,7 +164,7 @@ export const WORKS_INFORMATION = [
       '@nuxtjs/pwa',
       'Lighthouse & PageSpeed 評分 90+',
       'GSAP & ScrollMagic',
-      'LINE Bot API & server-sent event 製作彈幕特效',
+      'LINE Bot API & server-sent event (製作彈幕特效)',
       'AWS amplify & route 53',
     ],
   },
@@ -163,14 +173,14 @@ export const WORKS_INFORMATION = [
     description: '郵輪航線訂票平台系統 (前後台)',
     logo: require('../assets/works/genting.png'),
     view: 'http://genting-cruise-www-sit.cloud-softwares.com/enUS',
-    skills: ['Nuxt.js', 'google sheet API 管理多國語系', 'WebView (RWD)'],
+    skills: ['Nuxt.js', 'google sheet API', 'WebView (RWD)'],
   },
   {
     name: '台塑電子商務平台',
     description: '線上交易平台',
     logo: require('../assets/works/plastic.png'),
     view: 'https://formosa-pepp-web-sit.cloud-interactive.com/login',
-    skills: ['Nuxt.js', '與台塑後端討論及介接 API', 'google sheet API 管理多國語系', 'RWD'],
+    skills: ['Nuxt.js', '與台塑後端討論及介接 API', 'google sheet API', 'RWD'],
   },
   {
     name: 'Scan2Pay',
