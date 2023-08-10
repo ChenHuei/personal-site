@@ -58,7 +58,7 @@ export const RESUME_INFORMATION = [
       {
         title: 'Mentor',
         description:
-          '日常除了擔任另外三位 front-end 的 Mentor 之外，同時也負責規劃和評估其他 junior 的 React 相關學習',
+          '日常除了擔任另外三位 front-end 的 mentor 之外，同時也負責規劃和評估其他 junior 的 React 相關學習狀況',
       },
     ],
   },
