@@ -18,7 +18,7 @@ export const ABOUT_INFORMATION = [
     name: '陳振輝',
     jobs: '資深前端工程師 (Senior Front-End Engineer)',
     description:
-      '擁有五年前端開發經驗，熟悉 Typescript、React、Vue.js。追求簡潔易讀的程式碼，遵守 DRY 的開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
+      '擁有五年前端開發經驗，熟悉 Typescript、React、Next.js。追求簡潔易讀的程式碼，遵守 DRY 的開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
     phone: '0986-776-379',
     email: 'aaa830714@gmail.com',
   },
@@ -32,15 +32,15 @@ export const RESUME_INFORMATION = [
     list: [
       {
         title: '優化產品',
-        description: '加入網站的 CSP 設定、安排專案的 React 升級計畫...',
+        description: '加入 CSP 設定增強網站資安，並規劃專案的 React 版本升級...',
       },
       {
         title: '跨國、開發團隊',
-        description: '統一專案的時區設定，並依不同國家實作符合該地區法規及文化的功能',
+        description: '統一各專案的時區設定，並根據不同國家或客戶的需求，開發相應的功能',
       },
       {
         title: '面試',
-        description: '參與 20 逾人的前端面試，並制定面試規範',
+        description: '參與 20 逾人的前端面試，並制定和優化面試流程和標準',
       },
     ],
   },
@@ -52,12 +52,12 @@ export const RESUME_INFORMATION = [
       {
         title: '技術選型',
         description:
-          '基於仿 APP 的產品性質，提出 ionic 取代 antd 成為新的 UI 框架提升使用者體驗，並成功落實於公司',
+          '基於仿 APP 的產品性質，提出並成功實施以 Ionic 取代 Ant Design 作為新的 UI 框架，提升使用者體驗',
       },
       {
         title: 'Mentor',
         description:
-          '擔任三位 front-end engineer 的 mentor，同時也負責規劃和評估其他 junior 的 React 學習狀況',
+          '擔任三位 front-end engineer 的 mentor，並負責規劃和評估其他 junior 的 React 學習進度和成果',
       },
       {
         title: '技術分享',
@@ -65,7 +65,7 @@ export const RESUME_INFORMATION = [
       },
       {
         title: '無人商店購物網站',
-        description: '使用 Next.js 建立專案、負責串接第三方金流，以及調整 react-native',
+        description: '使用 Next.js 建立專案、串接第三方金流，以及調整 react-native',
       },
     ],
   },
