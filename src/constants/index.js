@@ -32,7 +32,7 @@ export const RESUME_INFORMATION = [
     list: [
       {
         title: '優化產品',
-        description: '加入 CSP 設定增強網站資安，並規劃專案的 React 版本升級...',
+        description: '加入 CSP 設定增強網站資安、規劃既有產品的架構調整 (monorepo)...',
       },
       {
         title: '跨國、開發團隊',
