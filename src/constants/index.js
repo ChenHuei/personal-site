@@ -18,7 +18,7 @@ export const ABOUT_INFORMATION = [
     name: '陳振輝',
     jobs: '資深前端工程師 (Senior Front-End Engineer)',
     description:
-      '擁有五年前端開發經驗，熟悉 Typescript、React、Next.js。追求簡潔易讀的程式碼，遵守 DRY 的開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
+      '擁有五年半前端開發經驗，熟悉 Typescript、React、Next.js。追求簡潔易讀的程式碼，遵守 DRY 的開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
     phone: '0986-776-379',
     email: 'aaa830714@gmail.com',
   },
@@ -31,8 +31,12 @@ export const RESUME_INFORMATION = [
     year: '2022/06 ~ now',
     list: [
       {
+        title: '技術選型',
+        description: '針對現有專案進行架構翻新和技術升級，包括導入 monorepo 的導入、React 版本的升級計畫...'
+      },
+      {
         title: '優化產品',
-        description: '加入 CSP 設定增強網站資安、規劃既有產品的架構調整 (monorepo)...',
+        description: '加入 CSP 設定增強網站資安、效能優化 (intersection-observer)...',
       },
       {
         title: '跨國、開發團隊',
