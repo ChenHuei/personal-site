@@ -32,7 +32,7 @@ export const RESUME_INFORMATION = [
     list: [
       {
         title: '技術選型',
-        description: '針對現有專案進行架構翻新和技術升級，包括導入 monorepo 的導入、React 版本的升級計畫...'
+        description: '將現有專案進行架構翻新和技術升級，包括導入 monorepo、規劃 React 的版本升級...'
       },
       {
         title: '優化產品',
