@@ -42,7 +42,7 @@ export const RESUME_INFORMATION = [
         title: '優化產品',
         description: '增強網站資安 (CSP)、優化效能，提升加載速度與用戶體驗',
         remark: [
-          '效能優化：專案 bundle size 減少約 40%，以打卡功能為例，彈出視窗顯示時間提昇約 2.2s',
+          '效能優化：專案 bundle size 減少約 40%，以打卡功能為例，彈出視窗顯示時間提升約 2.2s',
         ],
       },
       {
