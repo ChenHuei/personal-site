@@ -4,9 +4,7 @@
     <div class="container">
       <div class="step" v-for="step in RESUME_INFORMATION" :key="step.company">
         <div class="position">
-          <div class="title">
-            {{ step.company }} / {{ step.jobs }} ({{ step.year }})
-          </div>
+          <div class="title">{{ step.company }} / {{ step.jobs }} ({{ step.year }})</div>
           <ul class="items">
             <li class="item" v-for="item in step.list" :key="item.title">
               <div class="main">
@@ -22,6 +20,11 @@
               <div class="description">
                 {{ item.description }}
               </div>
+              <template v-if="item.remark">
+                <div class="remark">
+                  <div v-for="item in item.remark" :key="item">{{ item }}</div>
+                </div>
+              </template>
               <div v-if="item.skill" class="skill">
                 {{ item.skill }}
               </div>
@@ -41,12 +44,12 @@ export default {
   // eslint-disable-next-line
   data() {
     return {
-      RESUME_INFORMATION
+      RESUME_INFORMATION,
     }
   },
   components: {
-    Title
-  }
+    Title,
+  },
 }
 </script>
 
@@ -115,8 +118,12 @@ export default {
               }
             }
             > .description,
+            > .remark,
             > .skill {
               font-size: 12px;
+            }
+            > .remark,
+            > .skill {
               color: color(grey);
             }
             .skill {
@@ -195,15 +202,11 @@ export default {
             padding: 20px 28px 28px;
             text-align: left;
             > .item {
-              font-size: 14px;
               > .main {
                 justify-content: flex-start;
                 > a {
                   left: -8px;
                 }
-              }
-              > .description {
-                font-size: 12px;
               }
             }
           }

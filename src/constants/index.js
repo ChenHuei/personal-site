@@ -18,7 +18,7 @@ export const ABOUT_INFORMATION = [
     name: '陳振輝',
     jobs: '資深前端工程師 (Senior Front-End Engineer)',
     description:
-      '擁有五年半前端開發經驗，熟悉 Typescript、React、Next.js。追求簡潔易讀的程式碼，遵守 DRY 的開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
+      '擁有五年半的前端開發經驗，熟悉 React、Next.js、Typescript。追求簡潔易讀的程式碼，遵守 DRY 開發概念建立易讀、高擴充性的 Component。重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。以下將更詳細說明過往經歷，非常感謝您抽空觀看，請多多指教，謝謝！',
     phone: '0986-776-379',
     email: 'aaa830714@gmail.com',
   },
@@ -32,11 +32,18 @@ export const RESUME_INFORMATION = [
     list: [
       {
         title: '技術選型',
-        description: '將現有專案進行架構翻新和技術升級，包括導入 monorepo、規劃 React 的版本升級...'
+        description: '將現有專案進行技術升級和架構翻新，包括規劃 React 版本升級、導入 monorepo...',
+        remark: [
+          '規劃 React 版本升級：統一各個專案的 React 版本，確保 component 可復用，提升維護性與開發效率，避免多版本的管理成本',
+          '導入 monorepo：統一專案設定與共用套件，提升維護性並減少重複部署與管理成本',
+        ],
       },
       {
         title: '優化產品',
-        description: '加入 CSP 設定增強網站資安、效能優化 (intersection-observer)...',
+        description: '增強網站資安 (CSP)、優化效能，提升加載速度與用戶體驗',
+        remark: [
+          '效能優化：專案 bundle size 減少約 40%，以打卡功能為例，彈出視窗顯示時間提昇約 2.2s',
+        ],
       },
       {
         title: '跨國、開發團隊',
@@ -61,7 +68,7 @@ export const RESUME_INFORMATION = [
       {
         title: 'Mentor',
         description:
-          '擔任三位 front-end engineer 的 mentor，並負責規劃和評估其他 junior 的 React 學習進度和成果',
+          '擔任三位前端的 mentor，規劃並評估 Junior 前端的 React 學習進度與成果，提升團隊技術水平與開發效率',
       },
       {
         title: '技術分享',
