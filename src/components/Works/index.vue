@@ -12,7 +12,7 @@
           </a>
           <div class="description">{{ work.description }}</div>
           <div class="skill">
-            <h4>專案內容：</h4>
+            <h4>技術特點：</h4>
             <ul>
               <li v-for="(skill, index) in work.skills" :key="skill">
                 <div class="index">{{ index + 1 }}.</div>

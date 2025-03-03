@@ -17,14 +17,10 @@
                   {{ item.title }}
                 </template>
               </div>
-              <div class="description">
-                {{ item.description }}
+              <div v-if="item.description" class="description">
+                <div v-for="element in item.description" :key="element">{{ element }}</div>
+                {{ element }}
               </div>
-              <template v-if="item.remark">
-                <div class="remark">
-                  <div v-for="item in item.remark" :key="item">{{ item }}</div>
-                </div>
-              </template>
               <div v-if="item.skill" class="skill">
                 {{ item.skill }}
               </div>
