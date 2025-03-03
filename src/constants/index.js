@@ -165,7 +165,7 @@ export const LINKS_ITEMS = [
 export const WORKS_INFORMATION = [
   {
     name: '💰 Huei & Bei Money – 記帳',
-    logo: require('../assets/works/huei-bei-money.png'),
+    logo: require('../assets/works/huei-bei-money.webp'),
     view: 'https://huei-bei-money.vercel.app',
     skills: [
       '⚡ Vite：超高速開發環境與高效打包',
@@ -177,7 +177,7 @@ export const WORKS_INFORMATION = [
 
   {
     name: '💍 Huei & Bei Money – 婚禮',
-    logo: require('../assets/works/huei-bei-wedding.png'),
+    logo: require('../assets/works/huei-bei-wedding.webp'),
     view: 'https://chenhuei.github.io/huei-bei-wedding',
     skills: [
       '📱 PWA（Progressive Web App）：支援離線模式與行動端優化，提升用戶體驗',

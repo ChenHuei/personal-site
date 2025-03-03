@@ -6,11 +6,7 @@
         <div class="cover"></div>
       </div>
       <div class="right">
-        <div
-          class="introduce"
-          v-for="item in ABOUT_INFORMATION"
-          :key="item.name"
-        >
+        <div class="introduce" v-for="item in ABOUT_INFORMATION" :key="item.name">
           <div class="name">{{ item.name }}</div>
           <div class="jobs">{{ item.jobs }}</div>
           <div class="description">{{ item.description }}</div>
@@ -24,12 +20,7 @@
           </a>
         </div>
         <div class="links">
-          <a
-            v-for="item in LINKS_ITEMS"
-            :key="item.link"
-            :href="item.link"
-            target="_blank"
-          >
+          <a v-for="item in LINKS_ITEMS" :key="item.link" :href="item.link" target="_blank">
             <div class="button">
               {{ item.name }}
             </div>
@@ -46,14 +37,14 @@ import { LINKS_ITEMS, ABOUT_INFORMATION } from '../../constants'
 export default {
   name: 'About',
   components: {
-    Title
+    Title,
   },
   data() {
     return {
       LINKS_ITEMS,
-      ABOUT_INFORMATION
+      ABOUT_INFORMATION,
     }
-  }
+  },
 }
 </script>
 
@@ -69,7 +60,7 @@ export default {
       @include flexCenter;
       > .cover {
         @include size(100%);
-        @include backgroundImage('../../assets/cover.jpg');
+        @include backgroundImage('../../assets/cover.webp');
         transition: 1s;
       }
     }
