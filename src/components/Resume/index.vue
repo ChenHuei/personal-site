@@ -4,7 +4,10 @@
     <div class="container">
       <div class="step" v-for="step in RESUME_INFORMATION" :key="step.company">
         <div class="position">
-          <div class="title">{{ step.company }} / {{ step.jobs }} ({{ step.year }})</div>
+          <div class="title">
+            <div class="anchor"><Ripple /></div>
+            <span>{{ step.company }} / {{ step.jobs }} ({{ step.year }})</span>
+          </div>
           <ul class="items">
             <li class="item" v-for="item in step.list" :key="item.title">
               <div class="main">
@@ -34,6 +37,7 @@
 
 <script>
 import Title from '../Title'
+import Ripple from './components/Ripple'
 import { RESUME_INFORMATION } from '../../constants'
 export default {
   name: 'Resume',
@@ -45,6 +49,7 @@ export default {
   },
   components: {
     Title,
+    Ripple,
   },
 }
 </script>
@@ -67,20 +72,19 @@ export default {
         > .title {
           position: relative;
           @include size(100%, auto);
+          display: flex;
+          justify-content: flex-end;
           padding: 0 28px;
           font-size: 20px;
           font-weight: 500;
           line-height: 32px;
           letter-spacing: 0.4px;
           text-align: right;
-          &::after {
-            content: '';
+          > .anchor {
             position: absolute;
-            right: -11px;
-            top: 5px;
-            @include size(20px);
-            background-color: color(grey);
-            border-radius: 50%;
+            right: -1px;
+            left: unset;
+            top: 16px;
           }
         }
         > .items {
@@ -122,14 +126,6 @@ export default {
             > .skill {
               color: color(grey);
             }
-            .skill {
-              &::before {
-                content: '(';
-              }
-              &::after {
-                content: ')';
-              }
-            }
             &:last-child {
               margin: 0;
             }
@@ -144,8 +140,10 @@ export default {
           border-left: 2px solid color(grey);
           > .title {
             text-align: left;
-            &::after {
-              left: -11px;
+            justify-content: flex-start;
+            > .anchor {
+              left: -1px;
+              right: unset;
             }
           }
           > .items {
@@ -158,20 +156,6 @@ export default {
                   left: -8px;
                 }
               }
-            }
-          }
-        }
-      }
-      &:first-child {
-        > .position {
-          > .title {
-            &::before {
-              content: '';
-              position: absolute;
-              left: -2.5px;
-              top: 0;
-              @include size(5px);
-              background-color: color(grey_dark);
             }
           }
         }
@@ -190,8 +174,10 @@ export default {
           > .title {
             font-size: 16px;
             text-align: left;
-            &::after {
-              left: -11px;
+            justify-content: flex-start;
+            > .anchor {
+              left: -1px;
+              right: unset;
             }
           }
           > .items {
