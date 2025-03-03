@@ -15,10 +15,7 @@
             <h4>技術特點：</h4>
             <ul>
               <li v-for="(skill, index) in work.skills" :key="skill">
-                <div class="index">{{ index + 1 }}.</div>
-                <div class="content">
-                  {{ skill }}
-                </div>
+                <div class="content">{{ index + 1 }}. {{ skill }}</div>
               </li>
             </ul>
             <template v-if="work.code">
@@ -91,6 +88,7 @@ export default {
     font-weight: 700;
     color: color(black);
     text-decoration: none;
+    text-align: center;
   }
   > .description {
     margin: 8px 0 16px;
@@ -112,10 +110,6 @@ export default {
         line-height: 24px;
         color: color(grey);
         list-style: none;
-        > .index {
-          @include size(16px, 24px);
-          @include flexCenter;
-        }
         > .content {
           @include size(calc(100% - 16px), auto);
         }
@@ -139,7 +133,8 @@ export default {
     }
   }
 }
-@media screen and (max-width: 659px) {
+
+@media screen and (max-width: 1023px) {
   .works {
     > .container {
       > .work {

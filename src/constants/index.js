@@ -180,7 +180,7 @@ export const WORKS_INFORMATION = [
     logo: require('../assets/works/huei-bei-wedding.png'),
     view: 'https://chenhuei.github.io/huei-bei-wedding',
     skills: [
-      '📱 PWA（Progressive Web App）：(同上)',
+      '📱 PWA（Progressive Web App）：支援離線模式與行動端優化，提升用戶體驗',
       '⚡ 高效網站：網站效能評分 90+',
       '🎬 互動動畫：整合 GSAP 與 ScrollMagic，打造流暢的滾動動畫，提升視覺吸引力',
       '💬 即時彈幕：透過 LINE Bot 與 Server-Sent Events，讓賓客即時傳送祝福，增強互動體驗',
