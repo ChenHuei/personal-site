@@ -71,9 +71,10 @@ export const RESUME_INFORMATION = [
     year: '2021/07 ~ 2022/06',
     list: [
       {
-        title: '🎨 技術選型',
+        title: '🎨 技術選型與導入',
         description: [
-          '基於仿 APP 的產品特性，提出並成功導入 Ionic 取代 Ant Design 作為 UI 框架，優化使用者體驗',
+          '技術選型：基於 WebView 的產品特性，提出並成功導入 Ionic 取代 Ant Design 作為 UI 框架，優化行動端的使用者體驗',
+          '技術導入：導入 Next.js（v12）與 Testing，並透過內部分享會提升團隊程式碼品質與開發效率',
         ],
       },
       {
@@ -83,13 +84,9 @@ export const RESUME_INFORMATION = [
         ],
       },
       {
-        title: '💡 技術分享',
-        description: ['分享 Next.js 的特點(v12)、Testing 的概念與實作，以及 airbnb 的 style guide'],
-      },
-      {
         title: '🛒 無人商店購物網站',
         description: [
-          '從 0 到 1 建立網站，使用 Next.js 建立專案，負責第三方金流與 React Native 的串接，完整落實產品開發流程',
+          '從 0 到 1 完成專案，使用 Next.js 建立專案、負責第三方金流和 React Native 的開發與串接，完整落實產品開發流程',
         ],
       },
     ],
@@ -102,7 +99,7 @@ export const RESUME_INFORMATION = [
       {
         title: '💻 專案經驗：豪華郵輪 (Genting)、台塑電子商務、CEC 大陸工程、安麗簡訊...',
         description: [
-          '從 0 到 1 建立網站，使用 Nuxt.js 以及 Typescript (vue-property-decorator) 建立專案',
+          '從 0 到 1 完成專案，使用 Nuxt.js 以及 Typescript (vue-property-decorator) 建立專案和開發，完整落實產品開發流程',
         ],
       },
     ],
