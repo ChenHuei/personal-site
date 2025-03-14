@@ -2,7 +2,13 @@
   <section class="works" id="works">
     <Title :text="'LATEST WORKS'" />
     <div class="container">
-      <div class="work" v-for="work in WORKS_INFORMATION" :key="work.name">
+      <div
+        class="work"
+        v-for="work in WORKS_INFORMATION"
+        :key="work.name"
+        v-gsap-animate
+        data-animate="right"
+      >
         <a :href="work.view" target="_blank">
           <div class="left" :style="workStyleHandler(work.logo)"></div>
         </a>

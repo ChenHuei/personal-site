@@ -2,13 +2,15 @@
   <section class="resume" id="resume">
     <Title :text="'RESUME'" />
     <div class="container">
-      <div class="step" v-for="step in RESUME_INFORMATION" :key="step.company">
+      <div class="step" v-for="(step, index) in RESUME_INFORMATION" :key="step.company">
         <div class="position">
           <div class="title">
             <div class="anchor"><Ripple /></div>
-            <span>{{ step.company }} / {{ step.jobs }} ({{ step.year }})</span>
+            <span v-gsap-animate :data-index="index"
+              >{{ step.company }} / {{ step.jobs }} ({{ step.year }})</span
+            >
           </div>
-          <ul class="items">
+          <ul class="items" v-gsap-animate :data-index="index">
             <li class="item" v-for="item in step.list" :key="item.title">
               <div class="main">
                 <template v-if="item.link">

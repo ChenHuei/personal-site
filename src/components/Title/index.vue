@@ -1,5 +1,5 @@
 <template>
-  <div class="title">
+  <div class="title" v-gsap-animate data-animate="top">
     <h4>{{ text }}</h4>
   </div>
 </template>
@@ -10,9 +10,9 @@ export default {
   props: {
     text: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
 

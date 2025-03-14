@@ -2,10 +2,10 @@
   <section class="about" id="about">
     <Title :text="'ABOUT ME'" />
     <div class="container">
-      <div class="left">
+      <div class="left" v-gsap-animate data-animate="left">
         <div class="cover"></div>
       </div>
-      <div class="right">
+      <div class="right" v-gsap-animate data-animate="right">
         <div class="introduce" v-for="item in ABOUT_INFORMATION" :key="item.name">
           <div class="name">{{ item.name }}</div>
           <div class="jobs">{{ item.jobs }}</div>
